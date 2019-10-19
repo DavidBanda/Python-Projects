@@ -1,0 +1,40 @@
+Thread: we want to use threading whenever its going to significantly speed
+up our program, this speed-up comes from running different tasks concurrently
+
+Thread: Queremos usar threading cuando sea que vaya a, significativamente,
+incrementar la vel. de nuestros programas, este incremento de vel. viene de
+diferentes tareas corriendo concurrentemente. Si hay muchos calculos como
+procesamiento de fotos, redimensionar las fotos, los threads son mala idea,
+esto es cpu bound.
+
+    cpu bound task: Are things that are crunching a lot of numbers and using
+    the cpu.
+
+    i/o bound task: Are things that are just waiting for input and output
+    operations to be completed and not really using the cpu all that much.
+    (reading, writing from the file system, network operations, other file
+    system operations, downloading stuff online)
+
+    -- when it comes to threading were gonna see benefits when our tasks
+    are i/o bound (were doing a lot of waiting), but if our tasks are doing
+    a lot of data crunching and our cpu bound then we're not going to get that
+    much of a benefit from using threading. In fact some programs actually
+    run slower using threads. --
+
+    ###-- If a task is cpu bound then well likely want to use multiprocessing
+    and run it in parallel instead --###
+
+    -- when we run something concurrently using threads its not actually
+    going to run the code at the same time, it just gives the illusion of
+    running code at the same time, because when it comes to a point where
+    its just waiting around its just going to go ahead and move forward with
+    the script and run other code while the i/o operations finish --
+
+    -- cuando ejecutamos algo simultáneamente usando hilos, en realidad no
+    va a ejecutar el código al mismo tiempo, simplemente da la ilusión de
+    ejecutar código al mismo tiempo, porque cuando se trata de un punto en
+    el que solo está esperando, va a seguir adelante y avanzar con el
+    script y ejecutar otro código mientras finalizan las operaciones de
+    E / S.
+
+

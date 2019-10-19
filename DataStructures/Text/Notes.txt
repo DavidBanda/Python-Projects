@@ -1,0 +1,43 @@
+Algorithm:
+
+2.- A program that solves a problem
+3.- series of steps for solving a problem
+
+------------------------------------------------------------------------------------
+
+Data Structures:
+
+1.- Different ways of storing data on your computer
+2.- A way to store and organize data in a computer, so that
+it can be used efficiently
+
+------------------------------------------------------------------------------------
+               _
+Arrays          |    1) Logical view
+Linked list     |    2) Operations
+stack            }   3) Cost of operations (time)
+queue           |    4) Implementation
+tree            |
+graph          _|
+
+------------------------------------------------------------------------------------
+
+Define ADT (Abstract Data Types): define the data that we'll store and then we
+define the operations available with the type and we do not go to into the
+implementation details
+
+------------------------------------------------------------------------------------
+
+Efficiency or complexity: is how well you are using your computer's
+resources to get a particular job done.
+
+space and time: how long does your code take to run?, and how much storage space
+do you need?.
+
+------------------------------------------------------------------------------------
+
+Big O notation: O(n)
+
+ - Where 'n' is an expression algebraic
+ - Amount of lines in code.
+

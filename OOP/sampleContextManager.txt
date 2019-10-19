@@ -1,0 +1,2 @@
+Context managers allows to properly manage resources, we can specify exactly 
+what we want to set up  and tear down when working with certain objects

@@ -1,0 +1,41 @@
+-- Classes, objects, instance variables and class variables --
+
+Each object is a different instance based in a same class. If we
+print an object the result will be a location of memory.
+
+Instance variables: Instance variables contain unique data that is unique
+to each instance.
+
+Class variables: Are variables that are shared among all instances of
+a class.
+
+** variables instances can be unique for each instance. Class variables
+should be the same for each instance. **
+
+######################################################################
+
+-- Class methods and Static methods --
+
+Class method: we receive the class as our first argument instead of
+the instance. Sometimes class methods are using to create different ways
+to create an object. some constructors.
+
+Instance method: we receive the instance of the object as our first argument.
+They are used to modify an unique instance instead the class and not affect
+all objects only itself.
+
+Static method: Don't pass any argument. No self or cls. They behave just
+like regular functions and we include them in our classes because
+they have some logical connection with the class.
+
+######################################################################
+
+-- Property Decorators --
+
+@property: we do that a method works like a property. You access it like
+a property
+
+@fullname.setter: we access a method like a property and if you want change it
+you only change it like an any property
+
+
