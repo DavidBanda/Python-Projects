@@ -111,6 +111,52 @@ some formula, and spits out coded version of the value thats often the index in 
     when a hash function will spit out the same hash value for two different inputs.
     This situation is termed a collision.
 
+------------------------------------------------------------------------------------
+
+    TREES
+
+Terminology:
+
+    - Root: The first element in a tree is called root.ç
+    - Node: Individual elements in a tree that contain values are often
+    called nodes.
+    - Level: Connections + 1
+    - Leaf: Nodes at the end that don't have any children are called
+    leaves.
+    - Edges: You can call connection edges, and a group of connections
+    taken together as a path.
+    - Height: Is the number of edges between the node and the furthest
+    leaf on the tree.
+    - Depth: Is the number of edges to the root.
+
+Tree Traversal:
+
+    - Depth-first search (DFS): Is if there are children nodes to explore,
+    exploring them is definitely the priority.
+
+        - Pre-order traversal: We start at the root and check it off, then
+        we visit its children, the left one first and check it off too. We
+        continue traversing down the left most nodes until we had a leaf.
+        When we arrive to a leaf we check it off and go back up to the
+        parent and then traverse to the right node and check it off too.
+        We do this until we check off all nodes, then we back up to the
+        root node and do the same thing in the right node.
+
+        - In-order traversal: Is the same thing that in pre-order, but
+        check off its different. We only check off a node when we visited
+        its left child node.
+
+        - Post-order traversal: We won't be able to check off a node until
+        we've seen all of its descendants or we visited both of his children
+        and returned.
+
+    - Breadth-first search (BFS): Priority is visiting every node in the
+    same level we're currently on before visiting child nodes.
+
+        - Lever Order: Start at the root, then visit its children on the
+        second level then all of their children on the third level until
+        you've visited every single leaf. (We start on the left most side
+        of the level and move right)
 
 
 
