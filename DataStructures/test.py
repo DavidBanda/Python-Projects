@@ -21,10 +21,9 @@ def matrixRotation(matrix, r):
         matrix[i].pop(0)
         matrix[i + 1].pop(-1)
 
-        # if i == m - 2:
-        #     matrix[-1][0], matrix[-1][1] = matrix[-1][1], matrix[-1][0]
+        if i == m - 2:
+            matrix[-1][0], matrix[-1][1] = matrix[-1][1], matrix[-1][0]
 
-    print(matrix)
 
 if __name__ == '__main__':
     # mnr = input().rstrip().split()
