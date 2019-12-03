@@ -1,0 +1,43 @@
+{% extends "manageSite/base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sw-12 col-md-6 p-2 d-flex align-self-center align-middle">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Monitorear</h5>
+                    <p class="card-text">Monitorización en tiempo real.</p>
+                    <a href="{% url 'manageSite-monitoreo' %}" class="btn btn-secondary">Entrar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sw-12 col-md-6 p-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Registro de usuario</h5>
+                    <p class="card-text">Registra nuevo usuarios.</p>
+                    <a href="" class="btn btn-secondary">Entrar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sw-12 col-md-6 p-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Eliminar usuario</h5>
+                    <p class="card-text">Bloquea el acceso a los usuarios.</p>
+                    <a href="{% url 'manageSite-eliminar' %}" class="btn btn-secondary">Entrar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sw-12 col-md-6 p-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Grabaciones</h5>
+                    <p class="card-text">Visualiza todas la grabaciones.</p>
+                    <a href="{% url 'manageSite-grabacion' %}" class="btn btn-secondary">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

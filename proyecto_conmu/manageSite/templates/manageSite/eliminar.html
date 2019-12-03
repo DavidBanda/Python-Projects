@@ -1,0 +1,33 @@
+{% extends "manageSite/base.html" %}
+{% block content %}
+    <div class="container">
+
+        <h2 class="text-center" id="texto">Administración de usuarios</h2>
+        <br>
+        <br>
+
+        <table class="table thead-light">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido Paterno</th>
+                    <th scope="col">Email</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                    <tr>
+                        <th id="texto" id="texto" scope="row">{{ user.id }}</th>
+                        <td id="texto">{{ user.first_name }}</td>
+                        <td id="texto">{{ user.last_name }}</td>
+                        <td id="texto">{{ user.email }}</td>
+                        <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+{% endblock content %}

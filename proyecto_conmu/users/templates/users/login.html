@@ -1,0 +1,32 @@
+{% extends "manageSite/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="content-section">
+            <div class="col-12 mt-4">
+                <div class="texto">
+                    <h1 id="logo" class="text-center ">NeuroSecurity</h1>
+                    <h5 id="logo" class="text-center">Creando entornos seguros</h5>
+                </div>
+            </div>
+            <form method="post" >
+              {% csrf_token %}
+              <fieldset class="form-group" id="form1" >
+                <legend class="border-bottom mb-4">Log In</legend>
+                {{ form|crispy }}
+              </fieldset>
+              <div class="form-group">
+                 <button class="btn btn-outline-info" type="submit">Log In</button>
+                 <a class="ml-4" href="{% url 'register' %}">Sign Up</a>
+              </div>
+            </form>
+            <div class="border-top pt-3">
+              <small class="text-muted ml-2">
+                <a href="">Forgot password?</a>
+              </small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

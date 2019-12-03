@@ -1,0 +1,53 @@
+{% extends "manageSite/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="container-flui">
+        <div class="row text-center">
+            <div class="col-12 col-md-6">
+                <div style=" 
+                    /* border: solid 1px rgb(0, 0, 0);  */
+                    height: 400px;">
+                    <h1 id="texto" class="text-center">Camara</h1>
+                    <figure class="figure">
+                        <img src="{% static 'manageSite/img/cam_1.png' %}" style="width: 1400px;" class="img-fluid" alt="Responsive image">
+                    </figure>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div style="
+                /* border: solid 1px rgb(0, 0, 0);  */
+                height: 400px;">
+                    <div class="formulario ">
+                        <h1 id="texto" class="text-center">Mark Otto</h1>
+                        <h5 id="texto">Delitos económicos</h5>
+                        <img src="{% static 'manageSite/img/cam_2.png' %}" style="width: 400px; border: solid 5px; border-style: dashed;"
+                            class="img-fluid" alt="Responsive image">
+                        <div class="row ">
+                            <div class="col-12">
+                                <div id="texto" class="d-flex justify-content-center">
+                                    Encontrado
+                                </div>
+                                <table class="table align-self-center">
+                                    <thead>
+                                        <tr>
+                                            <th id="texto">#</th>
+                                            <th id="texto">Nombre</th>
+                                            <th id="texto">Apellido</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-danger">
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
