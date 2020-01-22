@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../DjangoProject/.idea/DjangoProject.iml" filepath="$PROJECT_DIR$/../DjangoProject/.idea/DjangoProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../djangoStreamVideo/.idea/djangoStreamVideo.iml" filepath="$PROJECT_DIR$/../djangoStreamVideo/.idea/djangoStreamVideo.iml" />
+      <module fileurl="file://$USER_HOME$/I.A/TensorFlow2.0/.idea/TensorFlow2.0.iml" filepath="$USER_HOME$/I.A/TensorFlow2.0/.idea/TensorFlow2.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/proyecto_conmu.iml" filepath="$PROJECT_DIR$/.idea/proyecto_conmu.iml" />
     </modules>
   </component>

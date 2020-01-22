@@ -1,17 +1,23 @@
-def anagrama(cadena1, cadena2):
+def anagrama(str1, str2):
 
-    arrCadena1 = [0]*26
-    arrCadena2 = [0]*26
+    if len(str1) != len(str2):
+        return False
 
-    for i in range(len(cadena1)):
-        arrCadena1[ord(cadena1[i]) - ord('a')] += 1
-        arrCadena2[ord(cadena2[i]) - ord('a')] += 1
+    arrCadena = [0]*26
 
-    for i in range(len(arrCadena1)):
-        if arrCadena1[i] != arrCadena2[i]:
+    for i in range(len(str1)):
+        # print(str1[i], ord(str1[i]) - 97)
+        arrCadena[ord(str1[i]) - 97] += 1
+        arrCadena[ord(str2[i]) - 97] -= 1
+
+    for i in range(len(arrCadena)):
+        if arrCadena[i] != 0:
             return False
+
     return True
 
 
-print(anagrama("aloh", "xddd"))
+print(anagrama("hola", "aloh"))
+
+
 

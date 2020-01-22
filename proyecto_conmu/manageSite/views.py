@@ -61,6 +61,33 @@ class VideoCamera:
                                                    minSize=(50, 50))
         for (x, y, w, h) in self.rects:
             image = cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 2)
+            cv2.putText(image, 'Face', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 2, (11, 52, 243), 2)
+        ret, jpeg = cv2.imencode('.jpg', image)
+        return jpeg.tobytes()
+
+
+class VideoCamera2:
+    def __init__(self):
+        self.video = cv2.VideoCapture(0)
+        self.cascade = cv2.CascadeClassifier("/Users/DavidBanda/PycharmProjects/proyecto_conmu/manageSite/haarcascade/"
+                                             "haarcascade_russian_plate_number.xml")
+
+    def __del__(self):
+        self.video.release()
+
+    def get_frame(self):
+        ret, image = self.video.read()
+        ret, jpeg = cv2.imencode('.jpg', image)
+        return jpeg.tobytes()
+
+    def get_frame(self):
+        ret, image = self.video.read()
+        self.gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        self.rects = self.cascade.detectMultiScale(self.gray, scaleFactor=1.2, minNeighbors=3,
+                                                   minSize=(50, 50))
+        for (x, y, w, h) in self.rects:
+            image = cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 2)
+            cv2.putText(image, 'Plate', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 2, (11, 52, 243), 2)
         ret, jpeg = cv2.imencode('.jpg', image)
         return jpeg.tobytes()
 
@@ -78,6 +105,16 @@ def video(request):
         return StreamingHttpResponse(gen(VideoCamera()), content_type="multipart/x-mixed-replace;boundary=frame")
     except HttpResponseServerError as e:
         print("aborted", e)
+
+@gzip.gzip_page
+def video2(request):
+    try:
+        return StreamingHttpResponse(gen(VideoCamera2()), content_type="multipart/x-mixed-replace;boundary=frame")
+    except HttpResponseServerError as e:
+        print("aborted", e)
+
+
+
 
 
 
