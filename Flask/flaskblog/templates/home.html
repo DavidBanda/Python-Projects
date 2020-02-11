@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2" href="#">{{ post.author }}</a>
+                    <small class="text-muted">{{ post.date_posted }}</small>
+                </div>
+                <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+                <p class="article-content">{{ post.content }}</p>
+            </div>
+        </article>
+    {% endfor %}
+
+{% endblock content%}
+
+{% block content2 %}
+        <div class="col-md-4">
+            <div class="content-section">
+                <h3>Formulario</h3>
+                <p class='text-muted'>Llenar formulario para agendar una visita
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-light">Materia</li>
+                        <li class="list-group-item list-group-item-light">Grupo</li>
+                        <li class="list-group-item list-group-item-light">Empresa</li>
+                        <li class="list-group-item list-group-item-light">Hora</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+{% endblock content2 %}
+
