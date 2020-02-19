@@ -2,66 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f891cacb-1736-42e3-8582-f9b823495224" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSFromAGoogleEngineer/.idea/DSFromAGoogleEngineer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSFromAGoogleEngineer/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSFromAGoogleEngineer/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DSFromAGoogleEngineer/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/abstract_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/main/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/main/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/posts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/posts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/posts/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/itchii.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/users/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/users/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flask_api/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/AlgorithmsPythonBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/AlgorithmsPythonBook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/papaCaliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/papaCaliente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStructuresUdacity/.idea/DataStructures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructuresUdacity/.idea/DataStructures.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/DjangoProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/static/blog/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_confirm_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/user_posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/profile_pics/358_VJCX6fs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/profile_pics/958.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/posts.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/signals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/logout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_complete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_confirm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_done.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flaskblog/routes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="99" column="55" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskblog/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,102 +107,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/test2.py" />
-        <option value="$PROJECT_DIR$/notes.txt" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/templates/about.html" />
-        <option value="$PROJECT_DIR$/forms.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/AdminUser.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Alumno.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Chofer.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Grupo.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Horario.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Materia.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Transporte.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/MateriaGrupoHasHoraio.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/MateriaHasGrupo.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Maestro.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/app.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Solicitud.py" />
-        <option value="$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Controllers/SolicitudesController.py" />
-        <option value="$PROJECT_DIR$/models.py" />
-        <option value="$PROJECT_DIR$/flaskblog.py" />
-        <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/flaskblog/__init__.py" />
-        <option value="$PROJECT_DIR$/flaskblog/models.py" />
-        <option value="$PROJECT_DIR$/flaskblog/forms.py" />
-        <option value="$PROJECT_DIR$/flaskblog/routes.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
-  </component>
+  <component name="ProjectId" id="1XmXHnlHCMXpzmYOATvIvfPSnaK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskblog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskblog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flask" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskblog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="profile_pics" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flaskblog" />
+      <recent name="$PROJECT_DIR$/flaskblog/static" />
       <recent name="$PROJECT_DIR$/flaskblog/static/profile_pics" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.test">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -234,304 +190,30 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21052632" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32911393" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../OOP/OOP/specialmethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../OOP/OOP/propertydecorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html" />
-    <entry file="file://$PROJECT_DIR$/templates/about.html" />
-    <entry file="file://$PROJECT_DIR$/../DjangoProject/blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#35#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/main.css" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/datetime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="1647" column="8" selection-start-line="1647" selection-start-column="8" selection-end-line="1647" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/AdminUser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Alumno.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Chofer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Grupo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Horario.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Materia.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Transporte.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/MateriaHasGrupo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Maestro.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DjangoProject/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DjangoProject/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="55" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DjangoProject/blog/templates/blog/user_posts.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/MateriaGrupoHasHoraio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Models/Solicitud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site.db" />
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/Controllers/SolicitudesController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DjangoProject/DjangoProject/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models.py" />
-    <entry file="file://$PROJECT_DIR$/forms.py" />
-    <entry file="file://$PROJECT_DIR$/notes.txt" />
-    <entry file="file://$PROJECT_DIR$/flaskblog/site.db" />
-    <entry file="file://$PROJECT_DIR$/flaskblog/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DjangoProject/DjangoProject/settings.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$USER_HOME$/Desktop/SS/visitas-tec2-api-master/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/notes.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../OOP/OOP/classmethodsandstaticmethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/profile_pics/40ca3f3568032e31.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DjangoProject/users/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/contrib/gis/utils/layermapping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="475" column="8" selection-start-line="475" selection-start-column="8" selection-end-line="475" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/profile_pics/5d630d985acf5e00.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/profile_pics/0cfd76bf4333f6ed.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/profile_pics/9d935203d2fad9af.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/profile_pics/a837bb396ee3aae4.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/profile_pics/d935453187e0e701.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/profile_pics/f45156fd83e43538.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/profile_pics/default.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/static/profile_pics/306259142401aabf.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskblog/routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="99" column="55" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="315" y="98" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581732200288">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="315" y="98" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1581732200288" />
+    <state x="33" y="0" key="SettingsEditor" timestamp="1581653346054">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1581653346054" />
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1582066536736">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582066536736" />
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1581652175293" />
+    <state x="253" y="113" width="1013" height="654" key="find.popup" timestamp="1582064936421">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="253" y="113" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1582064936421" />
+    <state x="259" y="0" key="scopes" timestamp="1581732802618">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="259" y="0" key="scopes/0.0.1280.800@0.0.1280.800" timestamp="1581732802618" />
   </component>
 </project>

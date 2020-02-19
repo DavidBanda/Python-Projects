@@ -4,3 +4,8 @@ variable de entorno al archivo
 3.- corremos con 'flask run' ó python3 nombre_del_archivo.py
 4.- creamos otra variable de entorno para poner en debug mode a flask
 export FLASK_DEBUG=1
+
+db.create_all()
+db.drop_all()
+
+

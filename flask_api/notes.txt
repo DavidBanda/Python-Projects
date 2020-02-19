@@ -1,0 +1,2 @@
+pipenv shell -to do a new virtual env-
+pipenv install ... -to install dependencies or modules-

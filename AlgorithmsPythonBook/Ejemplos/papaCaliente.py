@@ -1,5 +1,4 @@
-from DS.Queue import Queue
-
+from Ejemplos.DS.Queue import Queue
 
 def papaCal(listaDeNombres, N):
 

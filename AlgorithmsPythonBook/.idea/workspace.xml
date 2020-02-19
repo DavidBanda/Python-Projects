@@ -2,53 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2f22be5-2e76-4f65-9c23-eae0be35d0f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AutoEvaluacion/2/2.3 findMinNumInList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejemplos/DS/Deque.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejemplos/DS/Queue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejemplos/DS/stackConArray.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejemplos/DS/stackSinArray.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejemplos/createList.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejemplos/decimalToBinary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejemplos/papaCaliente.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejemplos/sumaDeNEnteros.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigO.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operationsOnADict.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/operationsOnAList.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pruebas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/abstract_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Design Patterns/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/main/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/main/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/posts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/posts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/posts/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/static/itchii.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/users/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/users/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flask_api/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AlgorithmsPythonBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AlgorithmsPythonBook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejemplos/anagrama.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejemplos/anagrama.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejemplos/testList.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejemplos/papaCaliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejemplos/papaCaliente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStructuresUdacity/.idea/DataStructures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructuresUdacity/.idea/DataStructures.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/DjangoProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/static/blog/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_confirm_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/user_posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/profile_pics/358_VJCX6fs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/profile_pics/958.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/posts.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/signals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/logout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_complete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_confirm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_done.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/Flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/routes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/.idea/proyecto_conmu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/.idea/proyecto_conmu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/manageSite/templates/manageSite/Pruebamonitoreo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/manageSite/templates/manageSite/Pruebamonitoreo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/manageSite/templates/manageSite/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/manageSite/templates/manageSite/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/manageSite/templates/manageSite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/manageSite/templates/manageSite/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/manageSite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/manageSite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/manageSite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/manageSite/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/proyecto_conmu/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/proyecto_conmu/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proyecto_conmu/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../proyecto_conmu/users/templates/users/login.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Ejemplos/DS/Deque.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,68 +105,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/testList.py" />
-        <option value="$PROJECT_DIR$/../DataStructuresUdacity/Searching and Sorting/recursion.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/sumaRecorrido.py" />
-        <option value="$PROJECT_DIR$/AutoEvaluacion/2/2.3 findNumInList.py" />
-        <option value="$PROJECT_DIR$/AutoEvaluacion/2/2.3 findMinNumInList.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/anagrama.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/createList.py" />
-        <option value="$PROJECT_DIR$/ejem.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/stack.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/dividirBy2.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/stackConArray.py" />
-        <option value="$PROJECT_DIR$/pruebas.py" />
-        <option value="$PROJECT_DIR$/../OOP/OOP/classmethodsandstaticmethods.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/Queue.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/decimalToBinary.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/papaCaliente.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/DS/Queue.py" />
-        <option value="$PROJECT_DIR$/Ejemplos/DS/Deque.py" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectId" id="1Y002pbyMyf1LkzIYRX1TnXRZW6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AlgorithmsPythonBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmsPythonBook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsPythonBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmsPythonBook" type="462c0819:PsiDirectoryNode" />
-              <item name="Ejemplos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsPythonBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsPythonBook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOP" type="462c0819:PsiDirectoryNode" />
-              <item name="OOP" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -135,19 +128,7 @@
       <recent name="$PROJECT_DIR$/Ejemplos" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.Deque">
+  <component name="RunManager" selected="Python.papaCaliente">
     <configuration name="Deque" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AlgorithmsPythonBook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -203,27 +184,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="classmethodsandstaticmethods" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="OOP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../OOP/OOP" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../OOP/OOP/classmethodsandstaticmethods.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,11 +279,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Deque" />
         <item itemvalue="Python.papaCaliente" />
+        <item itemvalue="Python.Deque" />
         <item itemvalue="Python.dividirBy2" />
         <item itemvalue="Python.Queue" />
-        <item itemvalue="Python.classmethodsandstaticmethods" />
       </list>
     </recent_temporary>
   </component>
@@ -340,174 +299,27 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989518" visible="true" weight="0.24960127" />
-      <window_info id="Structure" order="1" sideWeight="0.5010482" side_tool="true" weight="0.24960127" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32911393" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../OOP/OOP/inheritance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../OOP/pythonBasics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2836" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DataStructuresUdacity/Searching and Sorting/recursion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutoEvaluacion/2/2.3 findMinNumInList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/testList.py" />
-    <entry file="file://$PROJECT_DIR$/operationsOnAList.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DataStructuresUdacity/Text/bigo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DataStructuresUdacity/Searching and Sorting/mergeSort.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../DataStructuresUdacity/Text/notesDS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1044" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/operationsOnADict.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ejem.py" />
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943126/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="3654" column="8" selection-start-line="3654" selection-start-column="8" selection-end-line="3654" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/time.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1954" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../OOP/OOP/classvariables.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/anagrama.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pruebas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/DS/stackSinArray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../OOP/OOP/classesandinstances.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../OOP/OOP/classmethodsandstaticmethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/createList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bigO.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/sumaDeNEnteros.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/DS/stackConArray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/decimalToBinary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/papaCaliente.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/DS/Queue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ejemplos/DS/Deque.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state width="1254" height="198" key="GridCell.Tab.0.bottom" timestamp="1582064379321">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1254" height="198" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582064379321" />
+    <state width="1254" height="198" key="GridCell.Tab.0.center" timestamp="1582064379320">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1254" height="198" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582064379320" />
+    <state width="1254" height="198" key="GridCell.Tab.0.left" timestamp="1582064379319">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1254" height="198" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582064379319" />
+    <state width="1254" height="198" key="GridCell.Tab.0.right" timestamp="1582064379320">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1254" height="198" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582064379320" />
+    <state x="263" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1582064443726">
+      <screen x="0" y="23" width="1280" height="721" />
+    </state>
+    <state x="263" y="194" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582064009473" />
+    <state x="263" y="198" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1582064443726" />
   </component>
 </project>
