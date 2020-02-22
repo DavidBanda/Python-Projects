@@ -2,92 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f891cacb-1736-42e3-8582-f9b823495224" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Design Patterns/abstract_factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Design Patterns/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/main/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/main/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/posts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/posts/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/posts/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/static/itchii.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/users/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/users/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flask_api/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/AlgorithmsPythonBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/AlgorithmsPythonBook.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/factorial_recursivo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/main/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/solicitudes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/solicitudes/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/users/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/papaCaliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/papaCaliente.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataStructuresUdacity/.idea/DataStructures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructuresUdacity/.idea/DataStructures.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/DjangoProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/static/blog/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_confirm_delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/user_posts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/default.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/profile_pics/358_VJCX6fs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/profile_pics/958.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/posts.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/signals.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/logout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_complete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_confirm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/decimalToBinary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/decimalToBinary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/main/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/main/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/posts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/base_converter_recursive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/posts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/solicitudes/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/posts/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/solicitudes/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/users/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/users/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
@@ -118,7 +53,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -198,14 +133,18 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="315" y="98" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1581732200288" />
-    <state x="33" y="0" key="SettingsEditor" timestamp="1581653346054">
+    <state x="209" y="0" key="CommitChangelistDialog2" timestamp="1582075733157">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1581653346054" />
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1582066536736">
+    <state x="209" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1582075733157" />
+    <state x="33" y="0" key="SettingsEditor" timestamp="1582326978472">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582066536736" />
+    <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582326978472" />
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1582327002576">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582327002576" />
     <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1581652175293" />
     <state x="253" y="113" width="1013" height="654" key="find.popup" timestamp="1582064936421">
       <screen x="0" y="0" width="1280" height="800" />

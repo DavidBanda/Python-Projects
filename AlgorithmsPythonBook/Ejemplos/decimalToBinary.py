@@ -1,4 +1,4 @@
-from DS.stackConArray import Stack
+from Ejemplos.DS.stackConArray import Stack
 
 def divideBy2(integer):
 

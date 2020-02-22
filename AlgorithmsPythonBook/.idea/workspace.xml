@@ -2,91 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2f22be5-2e76-4f65-9c23-eae0be35d0f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Design Patterns/abstract_factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Design Patterns/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/main/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/main/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/main/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/posts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/posts/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/posts/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/static/itchii.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/users/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/users/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flask_api/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AlgorithmsPythonBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AlgorithmsPythonBook.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejemplos/factorial_recursivo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/solicitudes/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ejemplos/papaCaliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejemplos/papaCaliente.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataStructuresUdacity/.idea/DataStructures.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStructuresUdacity/.idea/DataStructures.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/DjangoProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/DjangoProject/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/static/blog/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_confirm_delete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/post_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/templates/blog/user_posts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/blog/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/default.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/profile_pics/358_VJCX6fs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/media/profile_pics/958.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/posts.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/signals.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/logout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_complete.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_confirm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/password_reset_done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/templates/users/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DjangoProject/users/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/Flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejemplos/decimalToBinary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejemplos/decimalToBinary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/main/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/main/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/posts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejemplos/base_converter_recursive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/posts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/solicitudes/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/posts/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/solicitudes/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
@@ -105,10 +32,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
-  </component>
   <component name="ProjectId" id="1Y002pbyMyf1LkzIYRX1TnXRZW6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -119,16 +42,16 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ejemplos" />
       <recent name="$PROJECT_DIR$/Ejemplos/DS" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Ejemplos" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.papaCaliente">
+  <component name="RunManager" selected="Python.base_converter_recursive">
     <configuration name="Deque" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AlgorithmsPythonBook" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,27 +65,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/DS/Deque.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AlgorithmsPythonBook" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ejemplos" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/DS/Queue.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,7 +94,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dividirBy2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="base_converter_recursive" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmsPythonBook" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -204,7 +106,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/decimalToBinary.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/base_converter_recursive.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="factorial_recursivo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmsPythonBook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ejemplos" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/factorial_recursivo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -226,6 +149,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/papaCaliente.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pruebas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AlgorithmsPythonBook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pruebas.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -279,10 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.base_converter_recursive" />
+        <item itemvalue="Python.pruebas" />
+        <item itemvalue="Python.factorial_recursivo" />
         <item itemvalue="Python.papaCaliente" />
         <item itemvalue="Python.Deque" />
-        <item itemvalue="Python.dividirBy2" />
-        <item itemvalue="Python.Queue" />
       </list>
     </recent_temporary>
   </component>
@@ -300,26 +245,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1254" height="198" key="GridCell.Tab.0.bottom" timestamp="1582064379321">
+    <state x="328" y="128" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582325488801">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1254" height="198" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582064379321" />
-    <state width="1254" height="198" key="GridCell.Tab.0.center" timestamp="1582064379320">
+    <state x="328" y="128" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1582325488801" />
+    <state width="1254" height="197" key="GridCell.Tab.0.bottom" timestamp="1582326344988">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1254" height="198" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582064379320" />
-    <state width="1254" height="198" key="GridCell.Tab.0.left" timestamp="1582064379319">
+    <state width="1254" height="197" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582326344988" />
+    <state width="1254" height="197" key="GridCell.Tab.0.center" timestamp="1582326344986">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1254" height="198" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582064379319" />
-    <state width="1254" height="198" key="GridCell.Tab.0.right" timestamp="1582064379320">
+    <state width="1254" height="197" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582326344986" />
+    <state width="1254" height="197" key="GridCell.Tab.0.left" timestamp="1582326344985">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1254" height="198" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582064379320" />
-    <state x="263" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1582064443726">
+    <state width="1254" height="197" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582326344985" />
+    <state width="1254" height="197" key="GridCell.Tab.0.right" timestamp="1582326344987">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1254" height="197" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582326344987" />
+    <state x="30" y="0" key="SettingsEditor" timestamp="1582326331667">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="30" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582326331667" />
+    <state x="263" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1582326199173">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
-    <state x="263" y="194" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582064009473" />
-    <state x="263" y="198" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1582064443726" />
+    <state x="263" y="198" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582326159732" />
+    <state x="263" y="198" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1582326199173" />
   </component>
 </project>

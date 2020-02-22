@@ -1,10 +1,10 @@
 from flask import render_template, request, Blueprint
-from flaskblog.models import Post
+from flaskblog.solicitudes.models import Post
 
 main = Blueprint('main', __name__)
 
 """
-posts = [
+solicitudes = [
     {
         'author': 'Ruben Alonso',
         'title': 'Visita 1',
@@ -23,7 +23,7 @@ posts = [
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('home.html', posts=posts, title="Home")
+    return render_template('home.html', solicitudes=solicitudes, title="Home")
 """
 
 

@@ -1,7 +1,8 @@
 from flask import render_template, url_for, flash, redirect, request, Blueprint
 from flask_login import login_user, current_user, logout_user, login_required
 from flaskblog import db, bcrypt
-from flaskblog.models import User, Post
+from flaskblog.solicitudes.models import Post
+from flaskblog.users.models import User
 from flaskblog.users.forms import (RegistrationForm, LoginForm, UpdateAccountForm)
 from flaskblog.users.utils import save_picture
 
@@ -64,6 +65,7 @@ def account():
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('account.html', title='Account',
                            image_file=image_file, form=form)
+
 
 @users.route('/user/<string:username>/')
 def user_posts(username):
