@@ -43,6 +43,21 @@
                     {% endif %}
                 </div>
                 <div class="form-group">
+                    {{ form.access.label(class="form-control-label") }}
+                    {% if form.access.errors %}
+                        {{ form.access(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.access.errors %}
+                                <span>
+                                    {{ error }}
+                                </span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.access(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
                     {{ form.picture.label() }}
                     {{ form.picture(class="form-control-file") }}
                     {% if form.picture.errors %}

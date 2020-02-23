@@ -1,5 +1,6 @@
 from flask import render_template, request, Blueprint
 from flaskblog.solicitudes.models import Post
+from flask_login import login_required
 
 main = Blueprint('main', __name__)
 
@@ -29,6 +30,7 @@ def home():
 
 @main.route('/')
 @main.route('/home')
+@login_required
 def home():
     page = request.args.get('page', 1, type=int)
     posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)

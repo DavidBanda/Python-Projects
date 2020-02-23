@@ -37,9 +37,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggle">
                     <div class="navbar-nav mr-auto">
-                        <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Visitas</a>
-                        <a class="nav-item nav-link" href="{{ url_for('solicitudes.new_post') }}">Nueva Visita</a>
-                        <a class="nav-item nav-link" href="{{ url_for('users.user_posts', username=current_user.username) }}">Mis Visitas</a>
+                        {% if current_user.access == 0 %}
+                            <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Visitas</a>
+                            <a class="nav-item nav-link" href="{{ url_for('solicitudes.new_post') }}">Nueva Visita</a>
+                            <a class="nav-item nav-link" href="{{ url_for('users.user_posts', username=current_user.username) }}">Mis Visitas</a>
+                        {% elif current_user.access in [1, 2, 3] %}
+                            <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Visitas</a>
+                        {% endif %}
                     </div>
                     <!-- Navbar Right Side -->
                     <div class="navbar-nav">
@@ -70,7 +74,9 @@
                 {% endwith %}
                 {% block content %}{% endblock %}
             </div>
-            {% block content2 %}{% endblock %}
+            {% if current_user.is_authenticated %}
+                {% block content2 %}{% endblock %}
+            {% endif %}
         </div>
     </main>
 

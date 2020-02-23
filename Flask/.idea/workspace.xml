@@ -2,28 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f891cacb-1736-42e3-8582-f9b823495224" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/factorial_recursivo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/main/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/solicitudes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/solicitudes/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/decimalToBinary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/decimalToBinary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/main/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/main/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/posts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/base_converter_recursive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/posts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/solicitudes/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/posts/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/solicitudes/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/users/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/users/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +43,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -133,23 +124,27 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="315" y="98" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1581732200288" />
-    <state x="209" y="0" key="CommitChangelistDialog2" timestamp="1582075733157">
+    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582396783292">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="209" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1582075733157" />
-    <state x="33" y="0" key="SettingsEditor" timestamp="1582326978472">
+    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.800@0.0.1280.800" timestamp="1582396783292" />
+    <state x="209" y="23" width="862" height="721" key="CommitChangelistDialog2" timestamp="1582391827252">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582326978472" />
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1582327002576">
+    <state x="209" y="23" width="862" height="721" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1582391827252" />
+    <state x="33" y="0" key="SettingsEditor" timestamp="1582341797469">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582327002576" />
+    <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582341797469" />
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1582431045732">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582431045732" />
     <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1581652175293" />
-    <state x="253" y="113" width="1013" height="654" key="find.popup" timestamp="1582064936421">
+    <state x="253" y="113" width="1013" height="654" key="find.popup" timestamp="1582397652364">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="253" y="113" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1582064936421" />
+    <state x="253" y="113" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1582397652364" />
     <state x="259" y="0" key="scopes" timestamp="1581732802618">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

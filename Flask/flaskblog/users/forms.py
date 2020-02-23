@@ -1,19 +1,30 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from flask_login import current_user
 from flaskblog.users.models import User
 
+# key - value
+ACCESS = [
+    ('0', 'Profesor'),
+    ('1', 'Jefe de Departamento'),
+    ('2', 'Subdirector'),
+    ('3', 'Gestion Tecnologica'),
+    ('4', 'Admin')
+]
+
+
 class RegistrationForm(FlaskForm):
-    username = StringField('Username',
+    username = StringField('Usuario',
                            validators=[DataRequired(),
                                        Length(min=2, max=20)])
-    email = StringField('Email', validators=[DataRequired(), Email()])
-    password = PasswordField('Password', validators=[DataRequired()])
-    confirm_password = PasswordField('Confirm Password',
+    email = StringField('Correo', validators=[DataRequired(), Email()])
+    access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=ACCESS)
+    password = PasswordField('Contraseña', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirmar Contraseña',
                                      validators=[DataRequired(), EqualTo('password')])
-    submit = SubmitField('Sign Up')
+    submit = SubmitField('Registrar')
 
     @staticmethod
     def validate_username(self, username):
@@ -40,13 +51,13 @@ class LoginForm(FlaskForm):
 
 
 class UpdateAccountForm(FlaskForm):
-    username = StringField('Username',
+    username = StringField('Usuario',
                            validators=[DataRequired(),
                                        Length(min=2, max=20)])
-
-    email = StringField('Email', validators=[DataRequired(), Email()])
-    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png', 'jpeg'])])
-    submit = SubmitField('Update')
+    email = StringField('Correo', validators=[DataRequired(), Email()])
+    access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=ACCESS)
+    picture = FileField('Actualizar foto de perfil', validators=[FileAllowed(['jpg', 'png', 'jpeg'])])
+    submit = SubmitField('Actualizar')
 
     @staticmethod
     def validate_username(self, username):
