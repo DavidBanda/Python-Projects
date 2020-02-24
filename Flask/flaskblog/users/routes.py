@@ -73,16 +73,12 @@ def account():
 @users.route('/user/<string:username>/')
 @login_required
 def user_posts(username):
-    if current_user.access == 0:
-        page = request.args.get('page', 1, type=int)
-        user = User.query.filter_by(username=username).first_or_404()
-        posts = Post.query.filter_by(author=user)\
-            .order_by(Post.date_posted.desc())\
-            .paginate(page=page, per_page=3)
-        return render_template('visitas_usuario.html', posts=posts, title="User Post", user=user)
     page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
-    last_post = Post.query.order_by(Post.date_posted.desc()).first()
-    return render_template('visitas.html', posts=posts, title="Visitas", last_post=last_post)
+    user = User.query.filter_by(username=username).first_or_404()
+    posts = Post.query.filter_by(author=user)\
+        .order_by(Post.date_posted.desc())\
+        .paginate(page=page, per_page=5)
+    return render_template('visitas_usuario.html', posts=posts, title="User Post", user=user)
+
 
 
