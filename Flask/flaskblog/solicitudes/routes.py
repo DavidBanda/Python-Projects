@@ -11,21 +11,26 @@ solicitudes = Blueprint('solicitudes', __name__)
 @solicitudes.route('/post/new', methods=['GET', 'POST'])
 @login_required
 def new_post():
-    form = PostForm()
-    if form.validate_on_submit():
-        post = Post(title=form.title.data, content=form.content.data, author=current_user)
-        db.session.add(post)
-        db.session.commit()
-        flash('Your post has been created!', 'success')
-        return redirect(url_for('main.home'))
-    return render_template('create_post.html', title='Nueva Visita',
-                           legend='Nueva Visita', form=form)
+    if current_user.access == 0:
+        form = PostForm()
+        if form.validate_on_submit():
+            post = Post(title=form.title.data, content=form.content.data, author=current_user)
+            db.session.add(post)
+            db.session.commit()
+            flash('Your post has been created!', 'success')
+            return redirect(url_for('main.visitas'))
+        return render_template('create_post.html', title='Nueva Visita',
+                               legend='Nueva Visita', form=form)
+    page = request.args.get('page', 1, type=int)
+    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
+    last_post = Post.query.order_by(Post.date_posted.desc()).first()
+    return render_template('visitas.html', posts=posts, title="Visitas", last_post=last_post)
 
 
 @solicitudes.route('/post/<int:post_id>')
 def post(post_id):
     post = Post.query.get_or_404(post_id)
-    return render_template('post.html', title='post.title', post=post)
+    return render_template('post.html', title='Post', post=post)
 
 
 @solicitudes.route('/post/<int:post_id>/update', methods=['GET', 'POST'])
@@ -57,7 +62,7 @@ def delete_post(post_id):
     db.session.delete(post)
     db.session.commit()
     flash('Your post has been deleted!', 'success')
-    return redirect(url_for('main.home'))
+    return redirect(url_for('main.visitas'))
 
 
 

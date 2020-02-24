@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f891cacb-1736-42e3-8582-f9b823495224" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/grupos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/main/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/main/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/solicitudes/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/solicitudes/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/solicitudes/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/solicitudes/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/visitas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/visitas_usuario.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/users/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
@@ -24,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -136,15 +134,15 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582341797469" />
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1582431045732">
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1582576350154">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582431045732" />
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582576350154" />
     <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1581652175293" />
-    <state x="253" y="113" width="1013" height="654" key="find.popup" timestamp="1582397652364">
+    <state x="253" y="113" width="1013" height="654" key="find.popup" timestamp="1582580227728">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="253" y="113" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1582397652364" />
+    <state x="253" y="113" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1582580227728" />
     <state x="259" y="0" key="scopes" timestamp="1581732802618">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

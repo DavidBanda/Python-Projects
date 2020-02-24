@@ -1,6 +1,6 @@
-from flask import render_template, request, Blueprint
+from flask import render_template, request, Blueprint, redirect, url_for
 from flaskblog.solicitudes.models import Post
-from flask_login import login_required
+from flask_login import login_required, current_user
 
 main = Blueprint('main', __name__)
 
@@ -24,22 +24,20 @@ solicitudes = [
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('home.html', solicitudes=solicitudes, title="Home")
+    return render_template('visitas.html', solicitudes=solicitudes, title="Home")
 """
 
 
 @main.route('/')
-@main.route('/home')
+@main.route('/visitas')
 @login_required
-def home():
-    page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
-    last_post = Post.query.order_by(Post.date_posted.desc()).first()
-    return render_template('home.html', posts=posts, title="Home", last_post=last_post)
+def visitas():
+    # return render_template('visitas.html', posts=posts, title="Visitas", last_post=last_post)
+    return redirect(url_for('users.user_posts', username=current_user.username))
 
 
-@main.route('/about')
-def about():
-    return render_template('about.html', title="About")
+@main.route('/grupos')
+def grupos():
+    return render_template('grupos.html', title="Grupos")
 
 
