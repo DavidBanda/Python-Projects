@@ -50,16 +50,11 @@
                     </div>
                     <!-- Navbar Right Side -->
                     <div class="navbar-nav">
-                        {% if current_user.is_authenticated and current_user.access in [1, 2, 3] %}
-                            <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Account</a>
-                            <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Logout</a>
-                        {% elif current_user.is_authenticated and current_user.access == 4 %}
+                        {% if current_user.is_authenticated and current_user.access == 4 %}
                             <a class="nav-item nav-link" href="{{ url_for('users.register') }}">Registrar</a>
-                            <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Account</a>
-                            <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Logout</a>
-                        {% else %}
-                            <a class="nav-item nav-link" href="{{ url_for('users.login') }}">Ingresar</a>
                         {% endif %}
+                        <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Cuenta</a>
+                            <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Salir</a>
                     </div>
                 </div>
             </div>
