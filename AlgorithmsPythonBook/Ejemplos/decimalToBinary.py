@@ -37,8 +37,8 @@ def baseConverter(integer, base):
     return bin
 
 
-print(divideBy2(7))
-print(baseConverter(233, 2))
-print(baseConverter(8, 8))
-print(baseConverter(16, 16))
+# print(divideBy2(7))
+# print(baseConverter(233, 2))
+# print(baseConverter(8, 8))
+print(baseConverter(200, 16))  # 1100
 

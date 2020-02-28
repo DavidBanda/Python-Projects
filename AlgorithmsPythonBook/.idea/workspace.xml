@@ -2,19 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2f22be5-2e76-4f65-9c23-eae0be35d0f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejemplos/factorial_recursivo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Flask/flaskblog/solicitudes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejemplos/coin_change.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejemplos/coin_change_dynamic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejemplos/fibonacci_recursive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejemplos/tower_of_hanoi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Leetcode/.idea/Leetcode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Leetcode/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Leetcode/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Leetcode/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOP/list_comprehension.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOP/ternary_condition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AlgorithmsPythonBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AlgorithmsPythonBook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejemplos/base_converter_recursive.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejemplos/base_converter_recursive.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ejemplos/decimalToBinary.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejemplos/decimalToBinary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ejemplos/factorial_recursivo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejemplos/factorial_recursivo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pruebas.py" beforeDir="false" afterPath="$PROJECT_DIR$/pruebas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/main/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/main/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/posts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejemplos/base_converter_recursive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/posts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/solicitudes/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/posts/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/solicitudes/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flask/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -51,28 +59,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.base_converter_recursive">
-    <configuration name="Deque" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AlgorithmsPythonBook" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ejemplos/DS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/DS/Deque.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.pruebas">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="DSFromAGoogleEngineer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="base_converter_recursive" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="coin_change" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmsPythonBook" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/base_converter_recursive.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/coin_change.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -115,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="factorial_recursivo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="coin_change_dynamic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AlgorithmsPythonBook" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,7 +114,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/factorial_recursivo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/coin_change_dynamic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,19 +123,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="papaCaliente" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AlgorithmsPythonBook" />
+    <configuration name="list_comprehension" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OOP" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ejemplos" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../OOP" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejemplos/papaCaliente.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../OOP/list_comprehension.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,6 +157,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pruebas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ternary_condition" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OOP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../OOP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../OOP/ternary_condition.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -223,11 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.base_converter_recursive" />
         <item itemvalue="Python.pruebas" />
-        <item itemvalue="Python.factorial_recursivo" />
-        <item itemvalue="Python.papaCaliente" />
-        <item itemvalue="Python.Deque" />
+        <item itemvalue="Python.ternary_condition" />
+        <item itemvalue="Python.coin_change_dynamic" />
+        <item itemvalue="Python.list_comprehension" />
+        <item itemvalue="Python.coin_change" />
       </list>
     </recent_temporary>
   </component>
@@ -245,34 +253,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="104" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582690901799">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="57" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1582690901799" />
     <state x="328" y="128" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582325488801">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="328" y="128" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1582325488801" />
-    <state width="1254" height="197" key="GridCell.Tab.0.bottom" timestamp="1582326344988">
+    <state width="1254" height="222" key="GridCell.Tab.0.bottom" timestamp="1582752683642">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1254" height="197" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582326344988" />
-    <state width="1254" height="197" key="GridCell.Tab.0.center" timestamp="1582326344986">
+    <state width="1254" height="222" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582752683642" />
+    <state width="1254" height="222" key="GridCell.Tab.0.center" timestamp="1582752683639">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1254" height="197" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582326344986" />
-    <state width="1254" height="197" key="GridCell.Tab.0.left" timestamp="1582326344985">
+    <state width="1254" height="222" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582752683639" />
+    <state width="1254" height="222" key="GridCell.Tab.0.left" timestamp="1582752683638">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1254" height="197" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582326344985" />
-    <state width="1254" height="197" key="GridCell.Tab.0.right" timestamp="1582326344987">
+    <state width="1254" height="222" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582752683638" />
+    <state width="1254" height="222" key="GridCell.Tab.0.right" timestamp="1582752683640">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1254" height="197" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582326344987" />
-    <state x="30" y="0" key="SettingsEditor" timestamp="1582326331667">
+    <state width="1254" height="222" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582752683640" />
+    <state x="30" y="0" key="SettingsEditor" timestamp="1582735676550">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="30" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582326331667" />
-    <state x="263" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1582326199173">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state x="30" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582735676550" />
+    <state x="263" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1582673683674">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="263" y="198" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582326159732" />
+    <state x="263" y="198" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582673683674" />
     <state x="263" y="198" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1582326199173" />
   </component>
 </project>

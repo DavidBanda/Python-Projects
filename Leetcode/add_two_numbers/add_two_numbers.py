@@ -1,51 +1,30 @@
-from add_two_numbers.linked_list import Element, LinkedList
-
-l1 = LinkedList()
-l2 = LinkedList()
-
-e1 = Element(2)
-e2 = Element(4)
-e3 = Element(3)
-
-e4 = Element(5)
-e5 = Element(6)
-e6 = Element(4)
-
-l1.append(e1)
-l1.append(e2)
-l1.append(e3)
-
-l2.append(e4)
-l2.append(e5)
-l2.append(e6)
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 
 class Solution:
 
-    def add_two_numbers(self, list1, list2):
-        l3 = LinkedList()
-        add = self.to_integer(list1) + self.to_integer(list2)
-        add = f'{add}'
-        add = add[::-1]
-
-        for i in range(len(add)):
-            e = Element(int(add[i]))
-            l3.append(e)
-        print(l3.print_all_list())
-        return l3
-
     @staticmethod
-    def to_integer(lst):
-        current = lst.head
-        value = f'{current.value}'
-        while current.next:
-            current = current.next
-            value += f'{current.value}'
-        return int(value[::-1])
+    def add_two_numbers(l1, l2):
 
+        result = ListNode(0)
+        result_tail = result
+        carry = 0
 
-s = Solution()
-s.add_two_numbers(l1, l2)
+        while l1 or l2 or carry:
+            val1 = (l1.val if l1 else 0)
+            val2 = (l2.val if l2 else 0)
+            carry, out = divmod(val1+val2 + carry, 10)
+
+            result_tail.next = ListNode(out)
+            result_tail = result_tail.next
+
+            l1 = (l1.next if l1 else None)
+            l2 = (l2.next if l2 else None)
+
+        return result.next
 
 
 

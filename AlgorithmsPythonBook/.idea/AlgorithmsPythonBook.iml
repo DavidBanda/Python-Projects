@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="DataStructures" />
+    <orderEntry type="module" module-name="OOP" />
+    <orderEntry type="module" module-name="Leetcode" />
   </component>
 </module>

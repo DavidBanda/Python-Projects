@@ -1,4 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa9805bb-b228-41e4-80a1-c671e898f74b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/coin_change.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/coin_change_dynamic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/fibonacci_recursive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/tower_of_hanoi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Leetcode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/N-Quenns.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add_two_numbers/add_two_numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOP/list_comprehension.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOP/ternary_condition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/AlgorithmsPythonBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/AlgorithmsPythonBook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/base_converter_recursive.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/base_converter_recursive.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/decimalToBinary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/decimalToBinary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/factorial_recursivo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/factorial_recursivo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/pruebas.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/pruebas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flask/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Flask/flaskblog/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1YMVmwMBTtrQy3xGSLwJGYUXq9v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/add_two_numbers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.propertydecorators">
+    <configuration name="add_two_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/add_two_numbers/add_two_numbers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="propertydecorators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../OOP/OOP" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../OOP/OOP/propertydecorators.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.propertydecorators" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa9805bb-b228-41e4-80a1-c671e898f74b" name="Default Changelist" comment="" />
+      <created>1582752694637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582752694637</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1254" height="199" key="GridCell.Tab.0.bottom" timestamp="1582844638718">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1254" height="199" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582844638718" />
+    <state width="1254" height="199" key="GridCell.Tab.0.center" timestamp="1582844638717">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1254" height="199" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582844638717" />
+    <state width="1254" height="199" key="GridCell.Tab.0.left" timestamp="1582844638714">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1254" height="199" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582844638714" />
+    <state width="1254" height="199" key="GridCell.Tab.0.right" timestamp="1582844638718">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1254" height="199" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582844638718" />
+    <state x="33" y="0" key="SettingsEditor" timestamp="1582753675810">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582753675810" />
+  </component>
 </project>
