@@ -1,0 +1,13 @@
+Time Complexity:
+Time complexity is just a measure of how fast an algorithm or a solution runs
+
+Space Complexity:
+How much memory or space an algorithm uses up
+
+An algorithm will take space and time to execute, and we call this
+relationship space-time complexity
+
+Logarithm:
+If I am dividing N in half, in each operation, this is log(n). And if I
+double the size of the input, am I only performing one extra operation, it
+is also log(n)

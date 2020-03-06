@@ -107,7 +107,7 @@ Hash: the purpose of a hash function is to transform some value into one that ca
 stored and retrieved easily. You give it some value, it converts the value based on
 some formula, and spits out coded version of the value thats often the index in an array
 
-    - Collision: As it turns ut theres a flaw in our elegant system. There are times
+    - Collision: As it turns out theres a flaw in our elegant system. There are times
     when a hash function will spit out the same hash value for two different inputs.
     This situation is termed a collision.
 
@@ -128,6 +128,13 @@ Terminology:
     - Height: Is the number of edges between the node and the furthest
     leaf on the tree.
     - Depth: Is the number of edges to the root.
+
+    - Complete Tree: Every single level is field up except the final level,
+    if the final level has nodes, they should be field up to left to right
+    - Full tree: Its a full tree if every node in the tree has k-ary tree or
+    0.
+    - Perfect tree: All the leafs nodes have the same depth.
+
 
 Tree Traversal:
 
