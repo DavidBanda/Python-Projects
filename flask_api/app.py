@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Database
-app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql://{os.environ.get("DB_USER")}:{os.environ.get("DB_PASS")}' \
+app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql://root:david123' \
     f'@localhost/test_flask'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -73,6 +73,7 @@ def get_product(id):
     product = Product.query.get_or_404(id)
     return product_schema.jsonify(product)
 
+
 # UPDATE Product
 @app.route('/product/<int:id>', methods=['PUT'])
 def update_product(id):
@@ -100,12 +101,12 @@ def delete_product(id):
     db.session.delete(product)
     db.session.commit()
 
-
     return product_schema.jsonify(product)
 
 
 # Run server
 if __name__ == '__main__':
+    print(f'variable name: {__name__}')
     app.run(debug=True)
 
 

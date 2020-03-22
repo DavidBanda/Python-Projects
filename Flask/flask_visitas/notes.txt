@@ -5,6 +5,8 @@ variable de entorno al archivo
 4.- creamos otra variable de entorno para poner en debug mode a flask
 export FLASK_DEBUG=1
 
+from flask_visitas import db
+
 db.create_all()
 db.drop_all()
 

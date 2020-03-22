@@ -2,75 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f891cacb-1736-42e3-8582-f9b823495224" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/coin_change.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/coin_change_dynamic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/10d02adebc0ac3ad.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_visitas/users/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Leetcode/.idea/Leetcode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Leetcode/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Leetcode/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Leetcode/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Leetcode/N-Quenns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Leetcode/add_two_numbers/add_two_numbers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Leetcode/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OOP/list_comprehension.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OOP/ternary_condition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/AlgorithmsPythonBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/AlgorithmsPythonBook.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/base_converter_recursive.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/base_converter_recursive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/decimalToBinary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/decimalToBinary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/factorial_recursivo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/factorial_recursivo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AlgorithmsPythonBook/pruebas.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/pruebas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OOP/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/arrays/four_number_sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/arrays/largest_range.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/arrays/move_element_to_end.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/arrays/smallest_difference.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/arrays/three_number_sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/recursion/permutations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/recursion/product_sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/search/binary_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/strings/group_anagrams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algoexpert/algorithms/strings/longest_palindromic_substring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Flask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/fibonacci_recursive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsPythonBook/Ejemplos/tower_of_hanoi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/main/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/main/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/main/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/solicitudes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/solicitudes/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/solicitudes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/solicitudes/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/itchii.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/itchii.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/10d02adebc0ac3ad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/12781871562cb585.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/12781871562cb585.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/131b9aab53234538.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/131b9aab53234538.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/1bb5fd54ebe66863.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/1bb5fd54ebe66863.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/2d74ff13521eb16d.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/2d74ff13521eb16d.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/306259142401aabf.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/306259142401aabf.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/3583684481ad3073.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/3583684481ad3073.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/549dff7ea858.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/549dff7ea858.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/63095951dfeeee4d.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/63095951dfeeee4d.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/7c80a154337f4336.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/7c80a154337f4336.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/a2795e52dc909068j.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/a2795e52dc909068j.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/c38f02e695a04db9.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/c38f02e695a04db9.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/c68cdd23d65ba3fb.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/c68cdd23d65ba3fb.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/d618be3f05085eaa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/d618be3f05085eaa.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/default.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/default.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/f2cd1255bddcdd65.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/f2cd1255bddcdd65.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/profile_pics/fca7e56224b279e8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/profile_pics/fca7e56224b279e8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/tecnm.png" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/tecnm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/create_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/create_post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/grupos.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/grupos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/visitas.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visitas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/visitas_usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visitas_usuario.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/users/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/users/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OOP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/solicitudes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/static/itchii.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/static/tecnm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/visitas_usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visitas_usuario.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/users/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/add_two_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/linked_list/add_two_numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/bubble_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/sort/bubble_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/caesar_cipher_encryptor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/strings/caesar_cipher_encryptor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/double_linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/linked_list/double_linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/insertion_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/sort/insertion_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/nth_fibonacci.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/recursion/nth_fibonacci.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/palindrome.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/strings/palindrome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/three_largest_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/sort/three_largest_numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/two_number_sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/arrays/two_number_sum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/algorithms/zigzag_traverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/algorithms/arrays/zigzag_traverse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algoexpert/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../algoexpert/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,23 +152,23 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.800@0.0.1280.800" timestamp="1582396783292" />
-    <state x="209" y="23" width="862" height="721" key="CommitChangelistDialog2" timestamp="1582391827252">
+    <state x="209" y="23" width="862" height="721" key="CommitChangelistDialog2" timestamp="1584470405756">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="209" y="23" width="862" height="721" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1582391827252" />
+    <state x="209" y="23" width="862" height="721" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1584470405756" />
     <state x="33" y="0" key="SettingsEditor" timestamp="1582341797469">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1582341797469" />
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1582853413991">
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1584463591895">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1582853413991" />
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1584463591895" />
     <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1581652175293" />
-    <state x="253" y="113" width="1013" height="654" key="find.popup" timestamp="1582580227728">
+    <state x="253" y="113" width="1013" height="654" key="find.popup" timestamp="1584134190676">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="253" y="113" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1582580227728" />
+    <state x="253" y="113" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1584134190676" />
     <state x="259" y="0" key="scopes" timestamp="1581732802618">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

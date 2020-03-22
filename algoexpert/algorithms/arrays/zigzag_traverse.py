@@ -18,10 +18,10 @@ def traverse_array(array):
         if is_down:
             if col == 0 or row == height:
                 is_down = False
-                if col == 0:
-                    row += 1
-                else:
+                if row == height:
                     col += 1
+                else:
+                    row += 1
             else:
                 col -= 1
                 row += 1
@@ -29,10 +29,10 @@ def traverse_array(array):
         else:
             if row == 0 or col == width:
                 is_down = True
-                if row == 0:
-                    col += 1
-                else:
+                if col == width:
                     row += 1
+                else:
+                    col += 1
             else:
                 col += 1
                 row -= 1

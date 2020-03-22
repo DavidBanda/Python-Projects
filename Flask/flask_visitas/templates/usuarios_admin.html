@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for user in users %}
+        {% if user != current_user %}
+            <article class="media content-section">
+                <img src="{{ url_for('static', filename='profile_pics/' + user.image_file) }}" class="rounded-circle article-img">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <a class="mr-2" href="{{ url_for('users.account') }}">{{ user.username }}</a>
+                        <small class="text-muted">{{ user.email }}</small>
+                    </div>
+                    <h2><a class="article-title" href="{{ url_for('users.user_posts', username=user.username) }}">Visitas</a></h2>
+                    <p class="article-content">{{ user.type_of_user() }}</p>
+                </div>
+            </article>
+        {% endif %}
+    {% endfor %}
+
+    
+
+
+{% endblock content%}

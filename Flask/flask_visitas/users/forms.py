@@ -58,6 +58,7 @@ class UpdateAccountForm(FlaskForm):
     access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=ACCESS)
     picture = FileField('Actualizar foto de perfil', validators=[FileAllowed(['jpg', 'png', 'jpeg'])])
     submit = SubmitField('Actualizar')
+    delete = SubmitField('Eliminar')
 
     @staticmethod
     def validate_username(self, username):
