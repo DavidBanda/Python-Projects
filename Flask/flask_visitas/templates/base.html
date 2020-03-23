@@ -46,12 +46,12 @@
                 <div class="collapse navbar-collapse" id="navbarToggle">
                     <div class="navbar-nav mr-auto">
                         {% if current_user.access == 0 %}
-                            <a class="nav-item nav-link" href="{{ url_for('users.user_posts', username=current_user.username) }}">Mis Visitas</a>
+                            <a class="nav-item nav-link" href="{{ url_for('users.visitas_usuario', username=current_user.username) }}">Mis Visitas</a>
                             <a class="nav-item nav-link" href="{{ url_for('main.grupos') }}">Grupos</a>
-                            <a class="nav-item nav-link" href="{{ url_for('solicitudes.new_post') }}">Nueva Visita</a>
+                            <a class="nav-item nav-link" href="{{ url_for('solicitudes.nueva_visita') }}">Nueva Visita</a>
                         {% elif current_user.access in [1, 2, 3] %}
                             <a class="nav-item nav-link" href="{{ url_for('main.visitas') }}">Visitas</a>
-                        {% else %}
+                        {% elif current_user.access == 4 %}
                             <a class="nav-item nav-link" href="{{ url_for('main.visitas') }}">Visitas</a>
                             <a class="nav-item nav-link" href="{{ url_for('users.all_users') }}">Usuarios</a>
                         {% endif %}

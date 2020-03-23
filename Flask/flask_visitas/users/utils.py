@@ -17,3 +17,10 @@ def save_picture(form_picture):
 
     return picture_fn
 
+
+def delete_picture(form_picture):
+    if form_picture != 'default.png':
+        picture_path = os.path.join(current_app.root_path, 'static/profile_pics', form_picture)
+        os.remove(picture_path)
+
+

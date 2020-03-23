@@ -1,5 +1,5 @@
 from flask import render_template, request, Blueprint, redirect, url_for
-from flask_visitas.solicitudes.models import Post
+from flask_visitas.solicitudes.models import Visitas
 from flask_login import login_required, current_user
 
 main = Blueprint('main', __name__)
@@ -44,11 +44,11 @@ def home():
 @login_required
 def visitas():
     if current_user.access == 0:
-        return redirect(url_for('users.user_posts', username=current_user.username))
+        return redirect(url_for('users.visitas_usuario', username=current_user.username))
     page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
-    last_post = Post.query.order_by(Post.date_posted.desc()).first()
-    return render_template('visitas.html', posts=posts, title="Visitas", last_post=last_post)
+    visitas = Visitas.query.order_by(Visitas.fecha_elaboracion.desc()).paginate(page=page, per_page=5)
+    last_visita = Visitas.query.order_by(Visitas.fecha_elaboracion.desc()).first()
+    return render_template('visitas.html', visitas=visitas, title="Visitas", last_visita=last_visita)
 
 
 @main.route('/grupos')

@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 {% block content %}
 <div class="content-section">
     <form action="" method="POST">
@@ -34,10 +34,6 @@
                 {% else %}
                     {{ form.password(class="form-control form-control-lg") }}
                 {% endif %}
-            </div>
-            <div class="form-check">
-                {{ form.remember(class="form-check-input") }}
-                {{ form.remember.label(class="form-check-label") }}
             </div>
         </fieldset>
         <div class="form-group">
