@@ -5,7 +5,7 @@
             <img src="{{ url_for('static', filename='profile_pics/' + visita.author.image_file) }}" class="rounded-circle article-img">
             <div class="media-body">
                 <div class="article-metadata">
-                    <a class="mr-2" href="{{ url_for('users.account') }}">{{ visita.author.username }}</a>
+                    <a class="mr-2" href="{{ url_for('users.account') }}">{{ visita.author.get_username() }}</a>
                     <small class="text-muted">{{ visita.fecha_visita.strftime('%Y-%m-%d') }}</small>
                 </div>
                 <h2><a class="article-title" href="{{ url_for('solicitudes.visita', visita_id=visita.id) }}">{{ visita.nombre_empresa }}</a></h2>
@@ -13,7 +13,6 @@
             </div>
         </article>
     {% endfor %}
-
     {% for page_num in visitas.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
         {% if page_num %}
             {% if visitas.page == page_num %}
@@ -30,19 +29,21 @@
 {% endblock content%}
 
 {% block content2 %}
-        <div class="col-md-4">
-            <div class="content-section">
-                <h3>Proxima visita</h3>
-                <p class='text-muted'>Siguiente visita en el calendario</p>
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-light">Materia: <b>{{ last_visita.nombre_asignatura }}</b></li>
-                         <li class="list-group-item list-group-item-light">Profesor: <b>{{ last_visita.author.get_username() }}</b></li>
-                        <li class="list-group-item list-group-item-light">Carrera: <b>{{ last_visita.get_carrera() }}</b></li>
-                        <li class="list-group-item list-group-item-light">Empresa: <b>{{ last_visita.nombre_empresa }}</b></li>
-                        <li class="list-group-item list-group-item-light">Fecha: <b>{{ last_visita.fecha_visita.strftime('%Y-%m-%d') }}</b></li>
-                    </ul>
+        {% if last_visita %}
+            <div class="col-md-4">
+                <div class="content-section">
+                    <h3>Proxima visita</h3>
+                    <p class='text-muted'>Siguiente visita en el calendario</p>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-light">Materia: <b>{{ last_visita.nombre_asignatura }}</b></li>
+                             <li class="list-group-item list-group-item-light">Profesor: <b>{{ last_visita.author.name }}</b></li>
+                            <li class="list-group-item list-group-item-light">Carrera: <b>{{ last_visita.get_carrera() }}</b></li>
+                            <li class="list-group-item list-group-item-light">Empresa: <b>{{ last_visita.nombre_empresa }}</b></li>
+                            <li class="list-group-item list-group-item-light">Fecha: <b>{{ last_visita.fecha_visita.strftime('%Y-%m-%d') }}</b></li>
+                        </ul>
+                </div>
             </div>
-        </div>
+        {% endif %}
 {% endblock content2 %}
 
 

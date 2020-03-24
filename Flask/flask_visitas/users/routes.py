@@ -15,7 +15,7 @@ def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        user = User(name=form.name.data, username=form.username.data, email=form.email.data,
+        user = User(name=form.name.data, email=form.email.data,
                     access=int(form.access.data), password=hashed_password)
         db.session.add(user)
         db.session.commit()
@@ -57,7 +57,6 @@ def account():
             delete_picture(current_user.image_file)
             current_user.image_file = picture_file
         current_user.name = form.name.data
-        current_user.username = form.username.data
         current_user.email = form.email.data
         current_user.access = int(form.access.data)
         db.session.commit()
@@ -65,7 +64,6 @@ def account():
         return redirect(url_for('users.account'))
     elif request.method == 'GET':
         form.name.data = current_user.name
-        form.username.data = current_user.username
         form.email.data = current_user.email
         form.access.data = f'{current_user.access}'
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
@@ -73,11 +71,11 @@ def account():
                            image_file=image_file, form=form)
 
 
-@users.route('/usuario/<string:username>/')
+@users.route('/usuario/<int:id>/')
 @login_required
-def visitas_usuario(username):
+def visitas_usuario(id):
     page = request.args.get('page', 1, type=int)
-    user = User.query.filter_by(username=username).first_or_404()
+    user = User.query.filter_by(id=id).first_or_404()
     visitas = Visitas.query.filter_by(author=user)\
         .order_by(Visitas.fecha_elaboracion.desc())\
         .paginate(page=page, per_page=5)
@@ -95,11 +93,11 @@ def all_users():
     abort(403)
 
 
-@users.route('/cuenta/<string:username>/', methods=['GET', 'POST'])
+@users.route('/cuenta/<int:id>/', methods=['GET', 'POST'])
 @login_required
-def account_admin(username):
+def account_admin(id):
     if current_user.access == 4:
-        user = User.query.filter_by(username=username).first_or_404()
+        user = User.query.filter_by(id=id).first_or_404()
         form = UpdateAccountForm()
         form.data_user_prev = user
         if form.validate_on_submit():
@@ -108,15 +106,13 @@ def account_admin(username):
                 delete_picture(user.image_file)
                 user.image_file = picture_file
             user.name = form.name.data
-            user.username = form.username.data
             user.email = form.email.data
             user.access = int(form.access.data)
             db.session.commit()
             flash('Tu cuanta ha sido actualizada!', 'success')
-            return redirect(url_for('users.account_admin', username=user.username))
+            return redirect(url_for('users.account_admin', id=user.id))
         elif request.method == 'GET':
             form.name.data = user.name
-            form.username.data = user.username
             form.email.data = user.email
             form.access.data = f'{user.access}'
         image_file = url_for('static', filename='profile_pics/' + user.image_file)

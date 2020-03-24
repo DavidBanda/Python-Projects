@@ -2,6 +2,7 @@ from flask_visitas import db
 from datetime import datetime
 from flask_visitas.solicitudes.dict_choices import status, periodo, carrera, turno
 
+
 class Visitas(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name_tec = db.Column(db.String(50), nullable=False)

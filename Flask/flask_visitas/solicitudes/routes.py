@@ -41,7 +41,7 @@ def nueva_visita():
                                legend='Nueva Visita', form=form)
     page = request.args.get('page', 1, type=int)
     visitas = Visitas.query.order_by(Visitas.fecha_elaboracion.desc()).paginate(page=page, per_page=5)
-    last_visita = Visitas.query.order_by(Visitas.fecha_elaboracion.desc()).first()
+    last_visita = Visitas.query.order_by(Visitas.fecha_visita.desc()).first()
     return render_template('visitas.html', visitas=visitas, title="Visitas", last_visita=last_visita)
 
 

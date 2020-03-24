@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f891cacb-1736-42e3-8582-f9b823495224" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/choices.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/dict_choices.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_visitas/users/choices.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_visitas/users/dict_choices.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/solicitudes/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/main/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/main/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/solicitudes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/solicitudes/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/create_visita.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/create_visita.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/usuarios_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/usuarios_admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/visita.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visita.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/visitas.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visitas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/visitas_usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visitas_usuario.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/users/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,10 +126,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="315" y="98" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1581732200288" />
-    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585020280753">
+    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585067749184">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.800@0.0.1280.800" timestamp="1585020280753" />
+    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.800@0.0.1280.800" timestamp="1585067749184" />
     <state x="209" y="23" width="862" height="721" key="CommitChangelistDialog2" timestamp="1584940265565">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -143,15 +138,15 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1584911978671" />
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1585013255954">
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1585066846742">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1585013255954" />
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1585066846742" />
     <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1581652175293" />
-    <state x="123" y="95" width="1013" height="654" key="find.popup" timestamp="1585030921611">
+    <state x="123" y="95" width="1013" height="654" key="find.popup" timestamp="1585068521904">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="123" y="95" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585030921611" />
+    <state x="123" y="95" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585068521904" />
     <state x="259" y="0" key="scopes" timestamp="1581732802618">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

@@ -44,10 +44,10 @@ def home():
 @login_required
 def visitas():
     if current_user.access == 0:
-        return redirect(url_for('users.visitas_usuario', username=current_user.username))
+        return redirect(url_for('users.visitas_usuario', id=current_user.id))
     page = request.args.get('page', 1, type=int)
     visitas = Visitas.query.order_by(Visitas.fecha_elaboracion.desc()).paginate(page=page, per_page=5)
-    last_visita = Visitas.query.order_by(Visitas.fecha_elaboracion.desc()).first()
+    last_visita = Visitas.query.order_by(Visitas.fecha_visita.desc()).first()
     return render_template('visitas.html', visitas=visitas, title="Visitas", last_visita=last_visita)
 
 

@@ -6,12 +6,12 @@
                 <img src="{{ url_for('static', filename='profile_pics/' + user.image_file) }}" class="rounded-circle article-img">
                 <div class="media-body">
                     <div class="article-metadata">
-                        <a class="mr-2" href="{{ url_for('users.account_admin', username=user.username) }}">{{ user.username }}</a>
+                        <a class="mr-2" href="{{ url_for('users.account_admin', id=user.id) }}">{{ user.get_username() }}</a>
                         <small class="text-muted">{{ user.email }}</small>
                     </div>
                     {% if user.access == 0 %}
                         <h3 class="mt-2"> {{ user.name }} </h3>
-                        <h3><a class="article-title" href="{{ url_for('users.visitas_usuario', username=user.username) }}">Visitas</a></h3>
+                        <h3><a class="article-title" href="{{ url_for('users.visitas_usuario', id=user.id) }}">Visitas</a></h3>
                     {% else %}
                         <h3 class="mt-2"> {{ user.name }} </h3>
                     {% endif %}

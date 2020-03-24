@@ -5,7 +5,7 @@
         class="rounded-circle article-img">
     <div class="media-body">
         <div class="article-metadata">
-            <a class="mr-2" href="{{ url_for('users.account') }}">{{ visita.author.username }}</a>
+            <a class="mr-2" href="{{ url_for('users.account') }}">{{ visita.author.get_username() }}</a>
             <small class="text-muted">{{ visita.fecha_visita.strftime('%Y-%m-%d') }}</small>
         </div> 
         <h2>{{ visita.nombre_empresa }}</h2>

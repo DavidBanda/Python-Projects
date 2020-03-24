@@ -5,11 +5,11 @@
             <img class="rounded-circle account-img" style="margin-left: auto; margin-right: auto;" src="{{ image_file }}">
             <div class="col-md-9 media-body" style="">
                 {% if user %}
-                    <h2 class="account-heading">{{ user.name }}</h2>
+                    <h2 class="account-heading">{{ user.get_username() }}</h2>
                     <h2 class="account-heading">{{ user.type_of_user() }}</h2>
                     <p class="text-secondary">{{ user.email }}</p>
                 {% else %}
-                    <h2 class="account-heading">{{ current_user.name }}</h2>
+                    <h2 class="account-heading">{{ current_user.get_username() }}</h2>
                     <h2 class="account-heading">{{ current_user.type_of_user() }}</h2>
                     <p class="text-secondary">{{ current_user.email }}</p>
                 {% endif %}
@@ -32,21 +32,6 @@
                         </div>
                     {% else %}
                         {{ form.name(class="form-control form-control-lg") }}
-                    {% endif %}
-                </div>
-                <div class="form-group">
-                    {{ form.username.label(class="form-control-label") }}
-                    {% if form.username.errors %}
-                        {{ form.username(class="form-control form-control-lg is-invalid") }}
-                        <div class="invalid-feedback">
-                            {% for error in form.username.errors %}
-                                <span>
-                                    {{ error }}
-                                </span>
-                            {% endfor %}
-                        </div>
-                    {% else %}
-                        {{ form.username(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
                 <div class="form-group">

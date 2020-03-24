@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
     {% if current_user.access == 4 %}
-        <h1 class="mb-3">Visitas de {{ user.username }} ({{ visitas.total }})</h1>
+        <h1 class="mb-3">Visitas de {{ user.get_username() }} ({{ visitas.total }})</h1>
     {% else %}
         <h1 class="mb-3">Mis visitas ({{ visitas.total }})</h1>
     {% endif %}
@@ -11,7 +11,7 @@
             class="rounded-circle article-img">
         <div class="media-body">
             <div class="article-metadata">
-                <a class="mr-2" href="{{ url_for('users.account') }}">{{ visita.author.username }}</a>
+                <a class="mr-2" href="{{ url_for('users.account') }}">{{ visita.author.get_username() }}</a>
                 <small class="text-muted">{{ visita.fecha_visita.strftime('%Y-%m-%d') }}</small>
             </div>
             <h2><a class="article-title" href="{{ url_for('solicitudes.visita', visita_id=visita.id) }}">{{ visita.nombre_empresa }}</a></h2>
@@ -23,9 +23,9 @@
     {% for page_num in visitas.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
         {% if page_num %}
             {% if visitas.page == page_num %}
-                <a class="btn btn-info mb-4" href="{{ url_for('users.visitas_usuario', username=user.username, page=page_num) }}">{{ page_num }}</a>
+                <a class="btn btn-info mb-4" href="{{ url_for('users.visitas_usuario', id=user.id, page=page_num) }}">{{ page_num }}</a>
             {% else %}
-                <a class="btn btn-outline-info mb-4" href="{{ url_for('users.visitas_usuario', username=user.username, page=page_num) }}">{{ page_num }}</a>
+                <a class="btn btn-outline-info mb-4" href="{{ url_for('users.visitas_usuario', id=user.id, page=page_num) }}">{{ page_num }}</a>
             {% endif %}
         {% else %}
             ...

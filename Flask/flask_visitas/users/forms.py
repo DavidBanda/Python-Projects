@@ -11,9 +11,6 @@ class RegistrationForm(FlaskForm):
     name = StringField('Nombre Completo',
                        validators=[DataRequired(),
                                    Length(min=10, max=100)])
-    username = StringField('Usuario',
-                           validators=[DataRequired(),
-                                       Length(min=5, max=20)])
     email = StringField('Correo', validators=[DataRequired(), Email()])
     access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=ACCESS)
     password = PasswordField('Contraseña', validators=[DataRequired()])
@@ -22,13 +19,13 @@ class RegistrationForm(FlaskForm):
                                                  EqualTo('password')])
     submit = SubmitField('Registrar')
 
-    @staticmethod
-    def validate_username(self, username):
-
-        user = User.query.filter_by(username=username.data).first()
-
-        if user:
-            raise ValidationError('That username already exist. Please choose another one')
+    # @staticmethod
+    # def validate_username(self, username):
+    #
+    #     user = User.query.filter_by(username=username.data).first()
+    #
+    #     if user:
+    #         raise ValidationError('That username already exist. Please choose another one')
 
     @staticmethod
     def validate_email(self, email):
@@ -49,9 +46,6 @@ class UpdateAccountForm(FlaskForm):
     name = StringField('Nombre Completo',
                        validators=[DataRequired(),
                                    Length(min=10, max=100)])
-    username = StringField('Username',
-                           validators=[DataRequired(),
-                                       Length(min=5, max=20)])
     email = StringField('Correo', validators=[DataRequired(), Email()])
     access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=ACCESS)
     picture = FileField('Actualizar foto de perfil', validators=[FileAllowed(['jpg', 'png', 'jpeg'])])
@@ -59,21 +53,21 @@ class UpdateAccountForm(FlaskForm):
     delete = SubmitField('Eliminar')
     data_user_prev = None
 
-    @staticmethod
-    def validate_username(self, username):
-
-        if username.data != current_user.username and current_user.access != 4:
-            self.user_exist(username)
-
-        if self.data_user_prev.username != username.data:
-            self.user_exist(username)
-
-    @staticmethod
-    def user_exist(username):
-        user = User.query.filter_by(username=username.data).first()
-
-        if user:
-            raise ValidationError('That username already exist. Please choose another one')
+    # @staticmethod
+    # def validate_username(self, username):
+    #
+    #     if username.data != current_user.username and current_user.access != 4:
+    #         self.user_exist(username)
+    #
+    #     if self.data_user_prev.username != username.data:
+    #         self.user_exist(username)
+    #
+    # @staticmethod
+    # def user_exist(username):
+    #     user = User.query.filter_by(username=username.data).first()
+    #
+    #     if user:
+    #         raise ValidationError('That username already exist. Please choose another one')
 
     @staticmethod
     def validate_email(self, email):
