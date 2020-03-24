@@ -10,9 +10,12 @@
                         <small class="text-muted">{{ user.email }}</small>
                     </div>
                     {% if user.access == 0 %}
+                        <h3 class="mt-2"> {{ user.name }} </h3>
                         <h3><a class="article-title" href="{{ url_for('users.visitas_usuario', username=user.username) }}">Visitas</a></h3>
+                    {% else %}
+                        <h3 class="mt-2"> {{ user.name }} </h3>
                     {% endif %}
-                    <p class="article-content">{{ user.type_of_user() }}</p>
+                    <p class="article-content">Usuario: {{ user.type_of_user() }}</p>
                 </div>
             </article>
         {% endif %}

@@ -2,42 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f891cacb-1736-42e3-8582-f9b823495224" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/choices.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/dict_choices.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_visitas/users/choices.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_visitas/users/dict_choices.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/main/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/main/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/solicitudes/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/solicitudes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/solicitudes/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/10d02adebc0ac3ad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/12781871562cb585.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/131b9aab53234538.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/1bb5fd54ebe66863.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/2d74ff13521eb16d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/306259142401aabf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/3583684481ad3073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/549dff7ea858.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/63095951dfeeee4d.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/7c80a154337f4336.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/a2795e52dc909068j.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/c38f02e695a04db9.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/c68cdd23d65ba3fb.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/d618be3f05085eaa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/f2cd1255bddcdd65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/static/profile_pics/fca7e56224b279e8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/about.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/create_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/create_visita.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/grupos.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/grupos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/create_visita.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/create_visita.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visita.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/usuarios_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/usuarios_admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/visita.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visita.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/visitas.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visitas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/visitas_usuario.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/visitas_usuario.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/users/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/users/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/users/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -148,10 +131,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="315" y="98" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1581732200288" />
-    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582396783292">
+    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1585020280753">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.800@0.0.1280.800" timestamp="1582396783292" />
+    <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.800@0.0.1280.800" timestamp="1585020280753" />
     <state x="209" y="23" width="862" height="721" key="CommitChangelistDialog2" timestamp="1584940265565">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -160,22 +143,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1584911978671" />
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1584936210640">
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog" timestamp="1585013255954">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1584936210640" />
+    <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1585013255954" />
     <state x="263" y="177" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1581652175293" />
-    <state x="123" y="95" width="1013" height="654" key="find.popup" timestamp="1585005799478">
+    <state x="123" y="95" width="1013" height="654" key="find.popup" timestamp="1585030921611">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="123" y="95" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585005799478" />
+    <state x="123" y="95" width="1013" height="654" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1585030921611" />
     <state x="259" y="0" key="scopes" timestamp="1581732802618">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="259" y="0" key="scopes/0.0.1280.800@0.0.1280.800" timestamp="1581732802618" />
-    <state x="221" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1584936216143">
+    <state x="221" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1585028351945">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="221" y="0" width="838" height="1032" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1584936216143" />
+    <state x="221" y="0" width="838" height="1032" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1585028351945" />
   </component>
 </project>

@@ -1,13 +1,6 @@
 from flask_visitas import db, login_manager
 from flask_login import UserMixin
-
-ACCESS = {
-    0: 'Profesor',
-    1: 'Jefe de Departamento',
-    2: 'Subdirector',
-    3: 'Gestión Tecnológica',
-    4: 'Administrador'
-}
+from flask_visitas.users.dict_choices import ACCESS
 
 
 @login_manager.user_loader
@@ -30,6 +23,12 @@ class User(db.Model, UserMixin):
 
     def type_of_user(self):
         return ACCESS[self.access]
+
+    def get_username(self):
+        all_name = self.name.split()
+        if len(all_name) == 3:
+            return f'{all_name[0]} {all_name[1]}'
+        return f'{all_name[0]} {all_name[2]}'
 
 
 

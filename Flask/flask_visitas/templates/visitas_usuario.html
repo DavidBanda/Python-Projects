@@ -5,17 +5,17 @@
     {% else %}
         <h1 class="mb-3">Mis visitas ({{ visitas.total }})</h1>
     {% endif %}
-    {% for post in visitas.items %}
+    {% for visita in visitas.items %}
     <article class="media content-section">
-        <img src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}"
+        <img src="{{ url_for('static', filename='profile_pics/' + visita.author.image_file) }}"
             class="rounded-circle article-img">
         <div class="media-body">
             <div class="article-metadata">
-                <a class="mr-2" href="{{ url_for('users.account') }}">{{ post.author.username }}</a>
-                <small class="text-muted">{{ post.fecha_elaboracion.strftime('%Y-%m-%d') }}</small>
+                <a class="mr-2" href="{{ url_for('users.account') }}">{{ visita.author.username }}</a>
+                <small class="text-muted">{{ visita.fecha_visita.strftime('%Y-%m-%d') }}</small>
             </div>
-            <h2><a class="article-title" href="{{ url_for('solicitudes.visita', visita_id=post.id) }}">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
+            <h2><a class="article-title" href="{{ url_for('solicitudes.visita', visita_id=visita.id) }}">{{ visita.nombre_empresa }}</a></h2>
+            <p class="article-content">{{ visita.objetivo }}</p>
         </div>
     </article>
     {% endfor %}

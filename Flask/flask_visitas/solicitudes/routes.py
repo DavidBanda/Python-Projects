@@ -14,7 +14,25 @@ def nueva_visita():
     if current_user.access == 0:
         form = VisitaForm()
         if form.validate_on_submit():
-            visita = Visitas(title=form.title.data, content=form.content.data, author=current_user)
+            visita = Visitas()
+            visita.name_tec = form.name_tec.data
+            visita.name_sub = form.name_sub.data
+            visita.periodo_escolar = int(form.periodo_escolar.data)
+            visita.no_visitas = form.no_visitas.data
+            visita.nombre_empresa = form.nombre_empresa.data
+            visita.ciudad = form.ciudad.data
+            visita.objetivo = form.objetivo.data
+            visita.area_visita = form.area_visita.data
+            visita.fecha_visita = form.fecha_visita.data
+            visita.turno = int(form.turno.data)
+            visita.carrera = int(form.carrera.data)
+            visita.semestre = form.semestre.data
+            visita.total_estudiantes = form.total_estudiantes.data
+            visita.nombre_asignatura = form.nombre_asignatura.data
+            visita.unidad_asignatura = form.unidad_asignatura.data
+            visita.nombre_jefe_departamento = form.nombre_jefe_departamento.data
+            visita.nombre_subdirector = form.nombre_subdirector.data
+            visita.author = current_user
             db.session.add(visita)
             db.session.commit()
             flash('Tu visita ha sido creada!', 'success')
@@ -42,14 +60,44 @@ def actualizar_visita(visita_id):
         abort(403)
     form = VisitaForm()
     if form.validate_on_submit():
-        visita.title = form.title.data
-        visita.content = form.content.data
+        visita.name_tec = form.name_tec.data
+        visita.name_sub = form.name_sub.data
+        visita.periodo_escolar = int(form.periodo_escolar.data)
+        visita.no_visitas = form.no_visitas.data
+        visita.nombre_empresa = form.nombre_empresa.data
+        visita.ciudad = form.ciudad.data
+        visita.objetivo = form.objetivo.data
+        visita.area_visita = form.area_visita.data
+        visita.fecha_visita = form.fecha_visita.data
+        visita.turno = int(form.turno.data)
+        visita.carrera = int(form.carrera.data)
+        visita.semestre = form.semestre.data
+        visita.total_estudiantes = form.total_estudiantes.data
+        visita.nombre_asignatura = form.nombre_asignatura.data
+        visita.unidad_asignatura = form.unidad_asignatura.data
+        visita.nombre_jefe_departamento = form.nombre_jefe_departamento.data
+        visita.nombre_subdirector = form.nombre_subdirector.data
         db.session.commit()
         flash('Tu visita ha sido actualizada!', 'success')
         return redirect(url_for('solicitudes.visita', visita_id=visita.id))
     if request.method == 'GET':
-        form.title.data = visita.title
-        form.content.data = visita.content
+        form.name_tec.data = visita.name_tec
+        form.name_sub.data = visita.name_sub
+        form.periodo_escolar.data = visita.periodo_escolar
+        form.no_visitas.data = visita.no_visitas
+        form.nombre_empresa.data = visita.nombre_empresa
+        form.ciudad.data = visita.ciudad
+        form.objetivo.data = visita.objetivo
+        form.area_visita.data = visita.area_visita
+        form.fecha_visita.data = visita.fecha_visita
+        form.turno.data = visita.turno
+        form.carrera.data = visita.carrera
+        form.semestre.data = visita.semestre
+        form.total_estudiantes.data = visita.total_estudiantes
+        form.nombre_asignatura.data = visita.nombre_asignatura
+        form.unidad_asignatura.data = visita.unidad_asignatura
+        form.nombre_jefe_departamento.data = visita.nombre_jefe_departamento
+        form.nombre_subdirector.data = visita.nombre_subdirector
     return render_template('create_visita.html', title='Actualizar Visita',
                            form=form, legend='Actualizar Visita')
 
