@@ -14,7 +14,8 @@ class VisitaForm(FlaskForm):
     ciudad = StringField('Ciudad', validators=[DataRequired(), Length(min=5, max=30)])
     objetivo = TextAreaField('Objetivo de la visita', validators=[DataRequired()])
     area_visita = StringField('Area a visitar en la empresa', validators=[DataRequired(), Length(min=5, max=30)])
-    fecha_visita = DateField('Fecha de visita', format='%d/%m/%Y', validators=[DataRequired()])
+    fecha_visita = DateField('Fecha de visita', format='%d/%m/%Y',
+                             validators=[DataRequired('Ingrese un formato valido')])
     turno = SelectField('Turno', validators=[DataRequired()], choices=turno)
     carrera = SelectField('Carrera', validators=[DataRequired()], choices=carrera)
     semestre = IntegerField('Semestre', validators=[DataRequired()])

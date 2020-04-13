@@ -36,12 +36,12 @@ def nueva_visita():
             db.session.add(visita)
             db.session.commit()
             flash('Tu visita ha sido creada!', 'success')
-            return redirect(url_for('main.visitas'))
+            return redirect(url_for('principal.visitas'))
         return render_template('create_visita.html', title='Nueva Visita',
                                legend='Nueva Visita', form=form)
     page = request.args.get('page', 1, type=int)
-    visitas = Visitas.query.order_by(Visitas.fecha_elaboracion.desc()).paginate(page=page, per_page=5)
-    last_visita = Visitas.query.order_by(Visitas.fecha_visita.desc()).first()
+    visitas = Visitas.query.order_by(Visitas.fecha_visita.asc()).paginate(page=page, per_page=5)
+    last_visita = Visitas.query.order_by(Visitas.fecha_visita.asc()).last()
     return render_template('visitas.html', visitas=visitas, title="Visitas", last_visita=last_visita)
 
 
@@ -78,7 +78,7 @@ def actualizar_visita(visita_id):
         visita.nombre_jefe_departamento = form.nombre_jefe_departamento.data
         visita.nombre_subdirector = form.nombre_subdirector.data
         db.session.commit()
-        flash('Tu visita ha sido actualizada!', 'success')
+        flash('La visita ha sido actualizada!', 'success')
         return redirect(url_for('solicitudes.visita', visita_id=visita.id))
     if request.method == 'GET':
         form.name_tec.data = visita.name_tec
@@ -110,8 +110,8 @@ def borrar_visita(visita_id):
         abort(403)
     db.session.delete(visita)
     db.session.commit()
-    flash('Tu visita ha sido eliminada!', 'success')
-    return redirect(url_for('main.visitas'))
+    flash('La visita ha sido eliminada!', 'success')
+    return redirect(url_for('principal.visitas'))
 
 
 

@@ -13,15 +13,19 @@ class DoublyLinkedList:
         self.tail = None
 
     def setHead(self, node):
-        # Write your code here.
-        pass
+        if self.head is None:
+            self.head = node
+            self.tail = node
+            return
+        self.insertBefore(self.head, node)
 
     def setTail(self, node):
-        # Write your code here.
-        pass
+        if self.tail is None:
+            self.setHead(node)
+            return
+        self.insertAfter(self.tail, node)
 
     def insertBefore(self, node, nodeToInsert):
-        # Write your code here.
         pass
 
     def insertAfter(self, node, nodeToInsert):

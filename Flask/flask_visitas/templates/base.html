@@ -46,25 +46,25 @@
                 <div class="collapse navbar-collapse" id="navbarToggle">
                     <div class="navbar-nav mr-auto">
                         {% if current_user.access == 0 %}
-                            <a class="nav-item nav-link" href="{{ url_for('users.visitas_usuario', id=current_user.id) }}">Mis Visitas</a>
-                            <a class="nav-item nav-link" href="{{ url_for('main.grupos') }}">Grupos</a>
+                            <a class="nav-item nav-link" href="{{ url_for('usuarios.visitas_usuario', id=current_user.id) }}">Mis Visitas</a>
+                            <a class="nav-item nav-link" href="{{ url_for('principal.grupos') }}">Grupos</a>
                             <a class="nav-item nav-link" href="{{ url_for('solicitudes.nueva_visita') }}">Nueva Visita</a>
                         {% elif current_user.access in [1, 2, 3] %}
-                            <a class="nav-item nav-link" href="{{ url_for('main.visitas') }}">Visitas</a>
+                            <a class="nav-item nav-link" href="{{ url_for('principal.visitas') }}">Visitas</a>
                         {% elif current_user.access == 4 %}
-                            <a class="nav-item nav-link" href="{{ url_for('main.visitas') }}">Visitas</a>
-                            <a class="nav-item nav-link" href="{{ url_for('users.all_users') }}">Usuarios</a>
+                            <a class="nav-item nav-link" href="{{ url_for('principal.visitas') }}">Visitas</a>
+                            <a class="nav-item nav-link" href="{{ url_for('usuarios.all_users') }}">Usuarios</a>
                         {% endif %}
                     </div>
                     <!-- Navbar Right Side -->
                     <div class="navbar-nav">
                         {% if current_user.is_authenticated and current_user.access == 4 %}
-                            <a class="nav-item nav-link" href="{{ url_for('users.register') }}">Registrar</a>
-                            <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Cuenta</a>
-                            <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Salir</a>
+                            <a class="nav-item nav-link" href="{{ url_for('usuarios.register') }}">Registrar</a>
+                            <a class="nav-item nav-link" href="{{ url_for('usuarios.account') }}">Cuenta</a>
+                            <a class="nav-item nav-link" href="{{ url_for('usuarios.logout') }}">Salir</a>
                         {% elif current_user.is_authenticated %}
-                            <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Cuenta</a>
-                            <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Salir</a>
+                            <a class="nav-item nav-link" href="{{ url_for('usuarios.account') }}">Cuenta</a>
+                            <a class="nav-item nav-link" href="{{ url_for('usuarios.logout') }}">Salir</a>
                         {% endif %}
                     </div>
                 </div>

@@ -1,12 +1,18 @@
-input_str = ["yo", "act", "flop", "tac", "cat", "oy", "olfp"]
+wordsArray = ["yo", "act", "flop", "tac", "cat", "oy", "olfp"]
 
 
-def anagram_groups(words):
-    words.sort()
-    return words
+def groupAnagrams(words):
+    anagrams = {}
+    for word in words:
+        sortedWord = "".join(sorted(word))
+        if sortedWord in anagrams:
+            anagrams[sortedWord].append(word)
+        else:
+            anagrams[sortedWord] = [word]
+    return list(anagrams.values())
 
 
-print(anagram_groups(input_str))
+print(groupAnagrams(wordsArray))
 
 
 

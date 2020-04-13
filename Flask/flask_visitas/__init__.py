@@ -10,14 +10,14 @@ app.config.from_object(Config)
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
-login_manager.login_view = 'users.login'
+login_manager.login_view = 'usuarios.login'
 login_manager.login_message_category = 'info'
 login_manager.login_message = 'Por favor ingrese a su cuenta para acceder a este recurso'
 
-from flask_visitas.users.routes import users
+from flask_visitas.usuarios.routes import usuarios
 from flask_visitas.solicitudes.routes import solicitudes
-from flask_visitas.main.routes import main
+from flask_visitas.principal.routes import principal
 
-app.register_blueprint(users)
+app.register_blueprint(usuarios)
 app.register_blueprint(solicitudes)
-app.register_blueprint(main)
+app.register_blueprint(principal)

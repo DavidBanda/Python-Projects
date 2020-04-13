@@ -6,12 +6,12 @@
                 <img src="{{ url_for('static', filename='profile_pics/' + user.image_file) }}" class="rounded-circle article-img">
                 <div class="media-body">
                     <div class="article-metadata">
-                        <a class="mr-2" href="{{ url_for('users.account_admin', id=user.id) }}">{{ user.get_username() }}</a>
+                        <a class="mr-2" href="{{ url_for('usuarios.account_admin', id=user.id) }}">{{ user.get_username() }}</a>
                         <small class="text-muted">{{ user.email }}</small>
                     </div>
                     {% if user.access == 0 %}
                         <h3 class="mt-2"> {{ user.name }} </h3>
-                        <h3><a class="article-title" href="{{ url_for('users.visitas_usuario', id=user.id) }}">Visitas</a></h3>
+                        <h3><a class="article-title" href="{{ url_for('usuarios.visitas_usuario', id=user.id) }}">Visitas</a></h3>
                     {% else %}
                         <h3 class="mt-2"> {{ user.name }} </h3>
                     {% endif %}
@@ -24,9 +24,9 @@
     {% for page_num in users.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
         {% if page_num %}
             {% if users.page == page_num %}
-                <a class="btn btn-info mb-4" href="{{ url_for('users.all_users', page=page_num) }}">{{ page_num }}</a>
+                <a class="btn btn-info mb-4" href="{{ url_for('usuarios.all_users', page=page_num) }}">{{ page_num }}</a>
             {% else %}
-                <a class="btn btn-outline-info mb-4" href="{{ url_for('users.all_users', page=page_num) }}">{{ page_num }}</a>
+                <a class="btn btn-outline-info mb-4" href="{{ url_for('usuarios.all_users', page=page_num) }}">{{ page_num }}</a>
             {% endif %}
         {% else %}
             ...

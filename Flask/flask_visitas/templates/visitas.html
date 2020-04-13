@@ -5,20 +5,31 @@
             <img src="{{ url_for('static', filename='profile_pics/' + visita.author.image_file) }}" class="rounded-circle article-img">
             <div class="media-body">
                 <div class="article-metadata">
-                    <a class="mr-2" href="{{ url_for('users.account') }}">{{ visita.author.get_username() }}</a>
+                    <a class="mr-2" href="{{ url_for('usuarios.account') }}">{{ visita.author.get_username() }}</a>
                     <small class="text-muted">{{ visita.fecha_visita.strftime('%Y-%m-%d') }}</small>
                 </div>
                 <h2><a class="article-title" href="{{ url_for('solicitudes.visita', visita_id=visita.id) }}">{{ visita.nombre_empresa }}</a></h2>
-                <p class="article-content">{{ visita.objetivo }}</p>
+                <h6 class="text-muted">Carrera: {{ visita.get_carrera() }}</h6>
+                <h6 class="text-muted">Semestre: {{ visita.semestre }}</h6>
+                <h6 class="text-muted">Materia: {{ visita.nombre_asignatura }}</h6>
+                <h6 class="text-muted">Unidad: {{ visita.unidad_asignatura }}</h6>
+                <p>{{ visita.objetivo }}</p>
+                {% if current_user.access == 1 or current_user.access == 2%}
+                    <div>
+                        <a class="btn btn-info btn-sm m-1" href="{{ url_for('solicitudes.actualizar_visita', visita_id=visita.id) }}">Aceptar</a>
+                        <button type="button" class="btn btn-danger btn-sm m-1" data-toggle="modal"
+                            data-target="#deleteModal">Rechazar</button>
+                    </div>
+                {% endif %}
             </div>
         </article>
     {% endfor %}
     {% for page_num in visitas.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
         {% if page_num %}
             {% if visitas.page == page_num %}
-                <a class="btn btn-info mb-4" href="{{ url_for('main.visitas', page=page_num) }}">{{ page_num }}</a>
+                <a class="btn btn-info mb-4" href="{{ url_for('principal.visitas', page=page_num) }}">{{ page_num }}</a>
             {% else %}
-                <a class="btn btn-outline-info mb-4" href="{{ url_for('main.visitas', page=page_num) }}">{{ page_num }}</a>
+                <a class="btn btn-outline-info mb-4" href="{{ url_for('principal.visitas', page=page_num) }}">{{ page_num }}</a>
             {% endif %}
         {% else %}
             ...

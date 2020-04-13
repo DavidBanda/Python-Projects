@@ -2,14 +2,14 @@ string_input = 'abcdcba'
 
 
 def is_palindrome(string):
-    left = 0
-    right = len(string) - 1
+    leftIdx = 0
+    rightIdx = len(string) - 1
 
-    while left < right:
-        if string[left] != string[right]:
+    while leftIdx < rightIdx:
+        if string[leftIdx] != string[rightIdx]:
             return False
-        left += 1
-        right -= 1
+        leftIdx += 1
+        rightIdx -= 1
     return True
 
 
