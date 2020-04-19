@@ -1,0 +1,6 @@
+array = []
+print(len(array))
+
+
+
+
