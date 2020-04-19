@@ -3,39 +3,41 @@ input_array = [[1, 2, 3, 4],
                [11, 16, 15, 6],
                [10, 9, 8, 7]]
 
+input_array2 = [[1, 2, 3, 4],
+                [10, 11, 12, 5],
+                [9, 8, 7, 6]]
+
 
 def spiralTraverse(matrix):
-    col = 0
-    row = 0
-    width = len(matrix[0]) - 1
-    height = len(matrix) - 1
-    arrayTraverse = []
-    right = True
-    down = False
+    result = []
+    startRow, endRow = 0, len(matrix) - 1
+    startCol, endCol = 0, len(matrix[0]) - 1
 
-    while width > 0 and height > 0:
-        arrayTraverse.append(matrix[row][col])
+    while startRow <= endRow and startCol <= endCol:
+        for col in range(startCol, endCol + 1):
+            result.append(matrix[startRow][col])
 
-        if right:
-            col += 1
-            if col == width:
-                right = False
-                down = True
-        elif not right:
-            pass
+        for row in range(startRow + 1, endRow + 1):
+            result.append(matrix[row][endCol])
 
-        if down:
-            row += 1
-            if row == height:
-                right = False
-        elif not down:
-            pass
+        for col in reversed(range(startCol, endCol)):
+            if startRow == endRow:
+                break
+            result.append(matrix[endRow][col])
 
-    return arrayTraverse
+        for row in reversed(range(startRow + 1, endRow)):
+            if startCol == endCol:
+                break
+            result.append(matrix[row][startCol])
+
+        startRow += 1
+        startCol += 1
+        endRow -= 1
+        endCol -= 1
+    return result
 
 
 print(spiralTraverse(input_array))
-
 
 
 

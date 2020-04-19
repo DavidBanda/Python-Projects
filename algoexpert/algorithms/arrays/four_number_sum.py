@@ -6,25 +6,22 @@ digit2 = 10
 
 
 def fourNumberSum(array, targetSum):
-    array.sort()
+    allPairs = {}
     quadruplets = []
-
-    for i in range(len(array) - 3):
-        left = i + 2
-        right = len(array) - 1
-
-        while left < right:
-            current_sum = array[i] + array[i + 1] + array[left] + array[right]
-            if current_sum == targetSum:
-                quadruplets.append([array[i], array[i + 1], array[left], array[right]])
-                left += 1
-                right -= 1
-            elif current_sum < targetSum:
-                left += 1
-            elif current_sum > targetSum:
-                right -= 1
-
+    for i in range(1, len(array)):
+        for j in range(i + 1, len(array)):
+            currentSum = array[i] + array[j]
+            difference = targetSum - currentSum
+            if difference in allPairs:
+                for pair in allPairs[difference]:
+                    quadruplets.append(pair + [array[i], array[j]])
+        for k in range(0, i):
+            currentSum = array[i] + array[k]
+            if currentSum in allPairs:
+                allPairs[currentSum].append([array[k], array[i]])
+            else:
+                allPairs[currentSum] = [[array[k], array[i]]]
     return quadruplets
 
 
-print(fourNumberSum(input_array2, digit2))
+print(fourNumberSum(input_array, digit))
