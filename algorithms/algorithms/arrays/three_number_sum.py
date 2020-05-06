@@ -4,24 +4,21 @@ digit = 0
 
 def three_number_sum(array, targetSum):
     array.sort()
-    res = []
-
+    triplets = []
     for i in range(len(array) - 2):
-        left = i + 1
-        right = len(array) - 1
-
-        while left < right:
-            current_sum = array[i] + array[left] + array[right]
-            if current_sum == targetSum:
-                res.append([array[i], array[left], array[right]])
-                left += 1
-                right -= 1
-            elif current_sum < targetSum:
-                left += 1
-            elif current_sum > targetSum:
-                right -= 1
-
-    return res
+        leftIdx = i + 1
+        rightIdx = len(array) - 1
+        while leftIdx < rightIdx:
+            sum = array[i] + array[leftIdx] + array[rightIdx]
+            if sum < targetSum:
+                leftIdx += 1
+            elif sum > targetSum:
+                rightIdx -= 1
+            else:
+                triplets.append([array[i], array[leftIdx], array[rightIdx]])
+                leftIdx += 1
+                rightIdx -= 1
+    return triplets
 
 
 print(three_number_sum(input_array, digit))

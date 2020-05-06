@@ -19,6 +19,7 @@ def waterArea(heights):
         rightMax = max(rightMax, height)
     return sum(maxes)
 
+
 print(waterArea(heights))
 
 
