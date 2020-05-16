@@ -45,13 +45,6 @@ def nueva_visita():
     return render_template('visitas.html', visitas=visitas, title="Visitas", last_visita=last_visita)
 
 
-@solicitudes.route('/visita/<int:visita_id>')
-@login_required
-def visita(visita_id):
-    visita = Visitas.query.get_or_404(visita_id)
-    return render_template('visita.html', title='Visita', visita=visita)
-
-
 @solicitudes.route('/visita/<int:visita_id>/actualizar', methods=['GET', 'POST'])
 @login_required
 def actualizar_visita(visita_id):
@@ -79,7 +72,7 @@ def actualizar_visita(visita_id):
         visita.nombre_subdirector = form.nombre_subdirector.data
         db.session.commit()
         flash('La visita ha sido actualizada!', 'success')
-        return redirect(url_for('solicitudes.visita', visita_id=visita.id))
+        return redirect(url_for('principal.visitas', visita_id=visita.id))
     if request.method == 'GET':
         form.name_tec.data = visita.name_tec
         form.name_sub.data = visita.name_sub

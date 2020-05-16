@@ -11,14 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-    
-    <style>
-        .img-bg {
-            max-width: 95%;
-            height: auto;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 
     {% if title %}
         <title>Gestion de Visitas - {{ title }}</title>
@@ -30,13 +23,13 @@
 
 <body>
     <header class="site-header">
-        <div class="container-bg" style="position: fixed; z-index: -1; bottom: 0.2rem; left: 0rem;">
-            <div class="container-img" style="opacity: .4; bottom: 0rem">
+        <div class="container-bg">
+            <div class="container-img">
                 <img class="img-bg" src="{{ url_for('static', filename='images/tecnm.png') }}"
                     alt="">
             </div>
         </div>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #B9050E;">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand mr-4" href="/">Gestión de visitas</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"

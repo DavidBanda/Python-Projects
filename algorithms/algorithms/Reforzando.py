@@ -1,31 +1,31 @@
-n = 4
+import ssl
+import urllib.error
+import urllib.parse
+import urllib.request
+from bs4 import BeautifulSoup
+
+cont = 0
+nombres = list()
+res = list()
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
 
 
-def getQueensPosition(n):
-    queensPosition = []
-    depthFirstSearch([], [], [], queensPosition, n)
-    return queensPosition
+def enlace(url):
+    nombres.clear()
+    res.clear()
+    html = urllib.request.urlopen(url, context=ctx).read()
+    soup = BeautifulSoup(html, 'html.parser')
+
+    tags = soup('a')
+    for tag in tags:
+        nombres.append(tag.get('href', None))
+        res.append(tag.contents[0])
+
+    return nombres[17]
 
 
-def depthFirstSearch(queens, slopeDown, slopeUp, queensPosition, n):
-
-    row = len(queens)
-
-    if row == n:
-        queens = [[0 if x != digit else 1 for x in range(n)] for digit in queens]
-        queensPosition.append(queens[:])
-
-    for col in range(n):
-        if col in queens or row - col in slopeDown or row + col in slopeUp:
-            continue
-
-        depthFirstSearch(queens + [col],
-                         slopeDown + [row - col],
-                         slopeUp + [row + col],
-                         queensPosition, n)
-
-
-[print(f'{[print(row) for row in element]}') for element in getQueensPosition(n)]
-
-
+aux = enlace('http://py4e-data.dr-chuck.net/known_by_Meri.html')
+print(res)
 

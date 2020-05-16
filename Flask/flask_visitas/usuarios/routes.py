@@ -15,7 +15,7 @@ def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        user = User(name=form.name.data, email=form.email.data,
+        user = User(name=form.name.data, email=form.email.data, department=int(form.department.data),
                     access=int(form.access.data), password=hashed_password)
         db.session.add(user)
         db.session.commit()
@@ -58,13 +58,15 @@ def account():
             current_user.image_file = picture_file
         current_user.name = form.name.data
         current_user.email = form.email.data
+        current_user.department = int(form.department.data)
         current_user.access = int(form.access.data)
         db.session.commit()
-        flash('Tu cuanta ha sido actualizada!', 'success')
+        flash('Tu cuenta ha sido actualizada!', 'success')
         return redirect(url_for('usuarios.account'))
     elif request.method == 'GET':
         form.name.data = current_user.name
         form.email.data = current_user.email
+        form.department.data = f'{current_user.department}'
         form.access.data = f'{current_user.access}'
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('account.html', title='Cuenta',
@@ -107,14 +109,16 @@ def account_admin(id):
                 user.image_file = picture_file
             user.name = form.name.data
             user.email = form.email.data
+            user.department = int(form.department.data)
             user.access = int(form.access.data)
             db.session.commit()
-            flash('Tu cuanta ha sido actualizada!', 'success')
+            flash('Tu cuenta ha sido actualizada!', 'success')
             return redirect(url_for('usuarios.account_admin', id=user.id))
         elif request.method == 'GET':
             form.name.data = user.name
             form.email.data = user.email
             form.access.data = f'{user.access}'
+            form.department.data = f'{user.department}'
         image_file = url_for('static', filename='profile_pics/' + user.image_file)
         return render_template('account.html', title='Cuenta',
                                image_file=image_file, form=form, user=user)
@@ -122,5 +126,15 @@ def account_admin(id):
     abort(403)
 
 
+@usuarios.route('/usuario/<int:usuario_id>/borrar', methods=['POST'])
+@login_required
+def borrar_usuario(usuario_id):
+    usuario = User.query.get_or_404(usuario_id)
+    if current_user.access != 4:
+        abort(403)
+    db.session.delete(usuario)
+    db.session.commit()
+    flash('El usuario ha sido eliminado!', 'success')
+    return redirect(url_for('usuarios.all_users'))
 
 

@@ -23,3 +23,15 @@ carrera = {
     5: 'Ing. Industrial',
     6: 'Ing. en Sistemas Computacionales'
 }
+
+department = {
+    0: 'Ninguno',
+    1: 'Informática',
+    2: 'Diseño Industrial',
+    3: 'Administración',
+    4: 'Arquitectura',
+    5: 'Gestión Empresarial',
+    6: 'Industrial',
+    7: 'Sistemas Computacionales'
+}
+

@@ -9,13 +9,16 @@
                         <a class="mr-2" href="{{ url_for('usuarios.account_admin', id=user.id) }}">{{ user.get_username() }}</a>
                         <small class="text-muted">{{ user.email }}</small>
                     </div>
+                    <h3 class="mt-2"> {{ user.name }} </h3>
                     {% if user.access == 0 %}
-                        <h3 class="mt-2"> {{ user.name }} </h3>
-                        <h3><a class="article-title" href="{{ url_for('usuarios.visitas_usuario', id=user.id) }}">Visitas</a></h3>
-                    {% else %}
-                        <h3 class="mt-2"> {{ user.name }} </h3>
+                        <h3 class="mt-2"><a class="article-title text-info" href="{{ url_for('usuarios.visitas_usuario', id=user.id) }}">Visitas</a></h3>
                     {% endif %}
-                    <p class="article-content">Usuario: {{ user.type_of_user() }}</p>
+                    <ul class="list-group mb-2">
+                        <li class="list-group-item-light mt-2">Tipo de usuario: <b>{{ user.type_of_user() }}</b></li>
+                        {% if user.department != 0 %}
+                            <li class="list-group-item-light mt-2">Departamento: <b>{{ user.get_department() }}</b></li>
+                        {% endif %}
+                    </ul>
                 </div>
             </article>
         {% endif %}

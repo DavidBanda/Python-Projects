@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="content-section" style="margin-top: 3%;">
+    <div class="content-section">
         <div class="media row pt-2">
-            <img class="rounded-circle account-img" style="margin-left: auto; margin-right: auto;" src="{{ image_file }}">
-            <div class="col-md-9 media-body" style="">
+            <img class="rounded-circle account-img" src="{{ image_file }}">
+            <div class="col-md-9 media-body">
                 {% if user %}
                     <h2 class="account-heading">{{ user.get_username() }}</h2>
-                    <h2 class="account-heading">{{ user.type_of_user() }}</h2>
+                    <h2 class="account-heading text-info">{{ user.type_of_user() }}</h2>
                     <p class="text-secondary">{{ user.email }}</p>
                 {% else %}
                     <h2 class="account-heading">{{ current_user.get_username() }}</h2>
-                    <h2 class="account-heading">{{ current_user.type_of_user() }}</h2>
+                    <h2 class="account-heading text-info">{{ current_user.type_of_user() }}</h2>
                     <p class="text-secondary">{{ current_user.email }}</p>
                 {% endif %}
             </div>
@@ -82,6 +82,39 @@
                         {% endif %}
                     </div>
                 {% endif %}
+                {% if current_user.access == 4 %}
+                    <div class="form-group">
+                        {{ form.department.label(class="form-control-label") }}
+                        {% if form.department.errors %}
+                            {{ form.department(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.access.errors %}
+                                    <span>
+                                        {{ error }}
+                                    </span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.department(class="form-control form-control-lg") }}
+                        {% endif %}
+                    </div>
+                {% else %}
+                    <div class="form-group" hidden>
+                        {{ form.department.label(class="form-control-label") }}
+                        {% if form.department.errors %}
+                            {{ form.department(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.access.errors %}
+                                    <span>
+                                        {{ error }}
+                                    </span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.department(class="form-control form-control-lg") }}
+                        {% endif %}
+                    </div>
+                {% endif %}
                 <div class="form-group">
                     {{ form.picture.label(class="mb-3") }}
                     {{ form.picture(class="form-control-file") }}
@@ -98,10 +131,38 @@
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info mr-4") }}
                 {% if current_user.access == 4 %}
-                    {{ form.delete(class="btn btn-outline-danger") }}
+                    <button type="button" class="btn btn-danger m-1" data-toggle="modal"
+                    data-target="#deleteModal">Borrar</button>
                 {% endif %}
             </div>
         </form>
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Borrar Visita</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                {% if user %}
+                    <form action="{{ url_for('usuarios.borrar_usuario', usuario_id=user.id) }}" method="POST">
+                        <input class="btn btn-danger" type="submit" value="Delete">
+                    </form>
+                {% else %}
+                    <form action="{{ url_for('usuarios.borrar_usuario', usuario_id=current_user.id) }}" method="POST">
+                        <input class="btn btn-danger" type="submit" value="Delete">
+                    </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}
 

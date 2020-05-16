@@ -4,7 +4,7 @@ from wtforms import StringField, PasswordField, SubmitField, SelectField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from flask_login import current_user
 from flask_visitas.usuarios.models import User
-from flask_visitas.usuarios.choices import ACCESS
+from flask_visitas.usuarios.choices import access, department
 
 
 class RegistrationForm(FlaskForm):
@@ -12,7 +12,8 @@ class RegistrationForm(FlaskForm):
                        validators=[DataRequired(),
                                    Length(min=10, max=100)])
     email = StringField('Correo', validators=[DataRequired(), Email()])
-    access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=ACCESS)
+    access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=access)
+    department = SelectField('Departamento', validators=[DataRequired()], choices=department)
     password = PasswordField('Contraseña', validators=[DataRequired()])
     confirm_password = PasswordField('Confirmar Contraseña',
                                      validators=[DataRequired(),
@@ -47,10 +48,10 @@ class UpdateAccountForm(FlaskForm):
                        validators=[DataRequired(),
                                    Length(min=10, max=100)])
     email = StringField('Correo', validators=[DataRequired(), Email()])
-    access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=ACCESS)
+    access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=access)
+    department = SelectField('Departamento', validators=[DataRequired()], choices=department)
     picture = FileField('Actualizar foto de perfil', validators=[FileAllowed(['jpg', 'png', 'jpeg'])])
     submit = SubmitField('Actualizar')
-    delete = SubmitField('Eliminar')
     data_user_prev = None
 
     # @staticmethod

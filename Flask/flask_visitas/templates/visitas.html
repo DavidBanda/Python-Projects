@@ -8,17 +8,18 @@
                     <a class="mr-2" href="{{ url_for('usuarios.account') }}">{{ visita.author.get_username() }}</a>
                     <small class="text-muted">{{ visita.fecha_visita.strftime('%Y-%m-%d') }}</small>
                 </div>
-                <h2><a class="article-title" href="{{ url_for('solicitudes.visita', visita_id=visita.id) }}">{{ visita.nombre_empresa }}</a></h2>
-                <h6 class="text-muted">Carrera: {{ visita.get_carrera() }}</h6>
-                <h6 class="text-muted">Semestre: {{ visita.semestre }}</h6>
-                <h6 class="text-muted">Materia: {{ visita.nombre_asignatura }}</h6>
-                <h6 class="text-muted">Unidad: {{ visita.unidad_asignatura }}</h6>
-                <p>{{ visita.objetivo }}</p>
-                {% if current_user.access == 1 or current_user.access == 2%}
+                <h2><a class="article-title" href="{{ url_for('solicitudes.actualizar_visita', visita_id=visita.id) }}">{{ visita.nombre_empresa }}</a></h2>
+                <ul class="list-group">
+                    <li class="list-group-item-light mb-1 list">Carrera: <b>{{ visita.get_carrera()  }}</b></li>
+                    <li class="list-group-item-light mb-1 list">Semestre: <b>{{ visita.semestre }}</b></li>
+                    <li class="list-group-item-light mb-1 list">Materia: <b>{{ visita.nombre_asignatura }}</b></li>
+                    <li class="list-group-item-light mb-1 list">Unidad: <b>{{ visita.unidad_asignatura }}</b></li>
+                </ul>
+                {% if visita.author == current_user or current_user.access == 4 %}
                     <div>
-                        <a class="btn btn-info btn-sm m-1" href="{{ url_for('solicitudes.actualizar_visita', visita_id=visita.id) }}">Aceptar</a>
-                        <button type="button" class="btn btn-danger btn-sm m-1" data-toggle="modal"
-                            data-target="#deleteModal">Rechazar</button>
+                        <a class="btn btn-outline-info btn-sm m-1 mt-3" href="{{ url_for('solicitudes.actualizar_visita', visita_id=visita.id) }}">Actualizar</a>
+                        <button type="button" class="btn btn-danger btn-sm m-1 mt-3" data-toggle="modal"
+                            data-target="#deleteModal">Borrar</button>
                     </div>
                 {% endif %}
             </div>
@@ -47,7 +48,7 @@
                     <p class='text-muted'>Siguiente visita en el calendario</p>
                         <ul class="list-group">
                             <li class="list-group-item list-group-item-light">Materia: <b>{{ last_visita.nombre_asignatura }}</b></li>
-                             <li class="list-group-item list-group-item-light">Profesor: <b>{{ last_visita.author.name }}</b></li>
+                            <li class="list-group-item list-group-item-light">Profesor: <b>{{ last_visita.author.name }}</b></li>
                             <li class="list-group-item list-group-item-light">Carrera: <b>{{ last_visita.get_carrera() }}</b></li>
                             <li class="list-group-item list-group-item-light">Empresa: <b>{{ last_visita.nombre_empresa }}</b></li>
                             <li class="list-group-item list-group-item-light">Fecha: <b>{{ last_visita.fecha_visita.strftime('%Y-%m-%d') }}</b></li>

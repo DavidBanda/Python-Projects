@@ -1,6 +1,7 @@
 from flask_visitas import db
 from datetime import datetime
-from flask_visitas.solicitudes.dict_choices import status, periodo, carrera, turno
+from flask_visitas.solicitudes.dict_choices import status, periodo, \
+    carrera, turno, department
 
 
 class Visitas(db.Model):

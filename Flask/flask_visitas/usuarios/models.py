@@ -1,6 +1,6 @@
 from flask_visitas import db, login_manager
 from flask_login import UserMixin
-from flask_visitas.usuarios.dict_choices import ACCESS
+from flask_visitas.usuarios.dict_choices import access, department
 
 
 @login_manager.user_loader
@@ -10,7 +10,7 @@ def load_user(user_id):
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
-
+    department = db.Column(db.Integer, nullable=False, default=0)
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     access = db.Column(db.Integer, nullable=False, default=0)
@@ -19,14 +19,33 @@ class User(db.Model, UserMixin):
     visitas = db.relationship('Visitas', backref='author', lazy=True)
 
     def __repr__(self):
-        return f"User('{self.username}', '{self.email}', '{self.image_file}')"
+        return f"User('{self.name}', '{self.email}')"
+
+    @staticmethod
+    def getJefeDepartamento():
+        jefes = User.query.filter_by(access=1).all()
+        storeJefesChoices = []
+        for i, jefe in enumerate(jefes):
+            storeJefesChoices.append((f'{i}', f'{jefe.name}'))
+        return storeJefesChoices if len(storeJefesChoices) > 0 else [(f'{0}', 'Inexistente')]
+
+    @staticmethod
+    def getSubdirector():
+        subs = User.query.filter_by(access=2).all()
+        storeSubdirectores = []
+        for i, sub in enumerate(subs):
+            storeSubdirectores.append((f'{i}', f'{sub.name}'))
+        return storeSubdirectores if len(storeSubdirectores) > 0 else [(f'{0}', 'Inexistente')]
 
     def type_of_user(self):
-        return ACCESS[self.access]
+        return access[self.access]
+
+    def get_department(self):
+        return department[self.department]
 
     def get_username(self):
         all_name = self.name.split()
-        if len(all_name) == 3:
+        if len(all_name) <= 3:
             return f'{all_name[0]} {all_name[1]}'
         return f'{all_name[0]} {all_name[2]}'
 

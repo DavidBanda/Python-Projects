@@ -3,6 +3,7 @@ from wtforms import (StringField, SubmitField, TextAreaField, SelectField,
                      IntegerField, DateField)
 from wtforms.validators import DataRequired, Length
 from flask_visitas.solicitudes.choices import periodo, carrera, turno
+from flask_visitas.usuarios.models import User
 
 
 class VisitaForm(FlaskForm):
@@ -22,6 +23,11 @@ class VisitaForm(FlaskForm):
     total_estudiantes = IntegerField('Total de estudiantes', validators=[DataRequired()])
     nombre_asignatura = StringField('Nombre asignatura', validators=[DataRequired(), Length(min=5, max=30)])
     unidad_asignatura = IntegerField('Unidad', validators=[DataRequired()])
-    nombre_jefe_departamento = StringField('Nombre Jefe de Departamento', validators=[DataRequired(), Length(min=5, max=30)])
-    nombre_subdirector = StringField('Nombre de Subdirector', validators=[DataRequired(), Length(min=5, max=30)])
+    nombre_jefe_departamento = SelectField('Nombre Jefe de Departamento', validators=[DataRequired()],
+                                           choices=User.getJefeDepartamento())
+    nombre_subdirector = SelectField('Nombre de Subdirector', validators=[DataRequired()],
+                                     choices=User.getSubdirector())
     submit = SubmitField('Solicitar')
+
+
+
