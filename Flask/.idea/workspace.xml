@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f891cacb-1736-42e3-8582-f9b823495224" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flask_visitas/templates/mail_body.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_visitas/templates/restablecer_contraseña.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_visitas/templates/restablecer_token.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/usuarios/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/usuarios/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/usuarios/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/usuarios/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_visitas/usuarios/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/usuarios/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/templates/mail_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/mail_body.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,10 +138,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1590172258652" />
-    <state x="263" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1591294830390">
+    <state x="263" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1591307445136">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="263" y="188" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1591294830390" />
+    <state x="263" y="188" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1591307445136" />
     <state x="123" y="95" width="1013" height="654" key="find.popup" timestamp="1589079046981">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
