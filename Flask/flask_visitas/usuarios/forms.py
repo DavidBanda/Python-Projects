@@ -87,4 +87,24 @@ class UpdateAccountForm(FlaskForm):
             raise ValidationError('Ya existe una cuenta con ese Email. Escoja otro por favor')
 
 
+class RequestResetForm(FlaskForm):
+    email = StringField('Correo', validators=[DataRequired(), Email()])
+    submit = SubmitField('Recuperar Contraseña')
+
+    @staticmethod
+    def validate_email(self, email):
+
+        user = User.query.filter_by(email=email.data).first()
+
+        if user is None:
+            raise ValidationError('No existe una cuenta registrada con ese Email.')
+
+
+class ResetPasswordForm(FlaskForm):
+    password = PasswordField('Contraseña', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirmar Contraseña',
+                                        validators=[DataRequired(),
+                                                    EqualTo('password')])
+    submit = SubmitField('Restablecer Contraseña')
+
 

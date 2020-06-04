@@ -1,10 +1,12 @@
 from flask import render_template, url_for, flash, redirect, request, Blueprint, abort
 from flask_login import login_user, current_user, logout_user, login_required
-from flask_visitas import db, bcrypt
+from flask_visitas import db, bcrypt, mail
 from flask_visitas.solicitudes.models import Visitas
 from flask_visitas.usuarios.models import User
-from flask_visitas.usuarios.forms import (RegistrationForm, LoginForm, UpdateAccountForm)
+from flask_visitas.usuarios.forms import (RegistrationForm, LoginForm, UpdateAccountForm,
+                                            RequestResetForm, ResetPasswordForm)
 from flask_visitas.usuarios.utils import save_picture, delete_picture
+from flask_mail import Message
 
 usuarios = Blueprint('usuarios', __name__)
 
@@ -70,7 +72,7 @@ def account():
         form.access.data = f'{current_user.access}'
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('account.html', title='Cuenta',
-                            image_file=image_file, form=form)
+                           image_file=image_file, form=form)
 
 
 @usuarios.route('/usuario/<int:id>/')
@@ -78,11 +80,12 @@ def account():
 def visitas_usuario(id):
     page = request.args.get('page', 1, type=int)
     user = User.query.filter_by(id=id).first_or_404()
-    visitas = Visitas.query.filter_by(author=user)\
-        .order_by(Visitas.fecha_elaboracion.desc())\
+    visitas = Visitas.query.filter_by(author=user) \
+        .order_by(Visitas.fecha_elaboracion.desc()) \
         .paginate(page=page, per_page=5)
     last_visita = Visitas.query.filter_by(author=user).order_by(Visitas.fecha_visita.asc()).first()
-    return render_template('visitas_usuario.html', visitas=visitas, title="Visitas Usuario", user=user, last_visita=last_visita)
+    return render_template('visitas_usuario.html', visitas=visitas, title="Visitas Usuario", user=user,
+                           last_visita=last_visita)
 
 
 @usuarios.route('/usuarios')
@@ -122,7 +125,7 @@ def account_admin(id):
             form.department.data = f'{user.department}'
         image_file = url_for('static', filename='profile_pics/' + user.image_file)
         return render_template('account.html', title='Cuenta',
-                                image_file=image_file, form=form, user=user)
+                            image_file=image_file, form=form, user=user)
     elif current_user.access in [1, 2, 3]:
         form.name.data = user.name
         form.email.data = user.email
@@ -131,7 +134,6 @@ def account_admin(id):
         image_file = url_for('static', filename='profile_pics/' + user.image_file)
         return render_template('account.html', title='Cuenta',
                                 image_file=image_file, form=form, user=user)
-    
 
     abort(403)
 
@@ -148,3 +150,53 @@ def borrar_usuario(usuario_id):
     return redirect(url_for('usuarios.all_users'))
 
 
+def send_reset_email(user):
+    token = user.get_reset_token()
+    msg = Message('Restablecer Contraseña',
+                    sender='noreply@demo.com',
+                    recipients=[user.email])
+    # msg.body = \
+    #     f''' Para restablecer tu contraseña, da click en el siguiente 
+    #     link: {url_for('usuarios.reset_token', token=token, _external=True)} 
+    
+    #     Si no hiciste esta solicitud, por favor ignora este email. 
+    #     '''
+
+    image_file = url_for('static', filename='images/mail-itch2.jpeg') 
+    msg.html = render_template('mail_body.html', token=token, image_file=image_file)
+
+    mail.send(msg)
+
+
+@usuarios.route('/restablecer-contraseña', methods=['GET', 'POST'])
+def reset_request():
+    if current_user.is_authenticated:
+        return redirect(url_for('principal.visitas'))
+    form = RequestResetForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data).first()
+        send_reset_email(user)
+        flash('Ah sido enviado un email con instrucciones para restablecer la contraseña.', 'info')
+        return redirect(url_for('usuarios.login'))
+    return render_template('restablecer_contraseña.html',
+                            title="Restablecer Contraseña", form=form)
+
+
+@usuarios.route('/restablecer-contraseña/<token>', methods=['GET', 'POST'])
+def reset_token(token):
+    if current_user.is_authenticated:
+        return redirect(url_for('principal.visitas'))
+    user = User.verify_reset_token(token)
+    if user is None:
+        flash('El token es invalido o ha expirado', 'warning')
+        return redirect(url_for('usuarios.reset_request'))
+
+    form = ResetPasswordForm()
+    if form.validate_on_submit():
+        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        user.password = hashed_password
+        db.session.commit()
+        flash(f'Tu contraseña ha sido actualizada! Ahora puedes iniciar sesión', 'success')
+        return redirect(url_for('usuarios.login'))
+    return render_template('restablecer_token.html',
+                           title="Restablecer Contraseña", form=form)

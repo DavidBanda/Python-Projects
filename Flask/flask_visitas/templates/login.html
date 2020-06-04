@@ -39,13 +39,11 @@
         <div class="form-group">
             {{ form.submit(class="btn btn-outline-info") }}
         </div>
-        <!--
         <small class="text-muted ml-2">
-            <a href="#">
-                Forgot Password?
+            <a href="{{ url_for('usuarios.reset_request') }}">
+                Olvidaste la Contraseña?
             </a>
         </small>
-        -->
     </form>
 </div>
 <!--

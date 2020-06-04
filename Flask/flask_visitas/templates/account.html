@@ -130,7 +130,7 @@
             </fieldset>
             <div class="form-group">
                 {% if not user or current_user.access == 4 %}
-                    {{ form.submit(class="btn btn-outline-info mr-4") }}
+                    {{ form.submit(class="btn btn-outline-info mr-2") }}
                 {% endif %}
                 {% if current_user.access == 4 %}
                     <button type="button" class="btn btn-danger m-1" data-toggle="modal"
