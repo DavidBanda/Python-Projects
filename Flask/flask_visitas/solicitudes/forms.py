@@ -1,9 +1,8 @@
 from flask_wtf import FlaskForm
 from wtforms import (StringField, SubmitField, TextAreaField, SelectField,
-                     IntegerField, DateField)
+                        IntegerField, DateField)
 from wtforms.validators import DataRequired, Length
 from flask_visitas.solicitudes.choices import periodo, carrera, turno
-from flask_visitas.usuarios.models import User
 
 
 class VisitaForm(FlaskForm):
@@ -16,7 +15,7 @@ class VisitaForm(FlaskForm):
     objetivo = TextAreaField('Objetivo de la visita', validators=[DataRequired()])
     area_visita = StringField('Area a visitar en la empresa', validators=[DataRequired(), Length(min=5, max=30)])
     fecha_visita = DateField('Fecha de visita', format='%d/%m/%Y',
-                             validators=[DataRequired('Ingrese un formato valido')])
+                                validators=[DataRequired('Ingrese un formato valido')])
     turno = SelectField('Turno', validators=[DataRequired()], choices=turno)
     carrera = SelectField('Carrera', validators=[DataRequired()], choices=carrera)
     semestre = IntegerField('Semestre', validators=[DataRequired()])
@@ -24,9 +23,9 @@ class VisitaForm(FlaskForm):
     nombre_asignatura = StringField('Nombre asignatura', validators=[DataRequired(), Length(min=5, max=30)])
     unidad_asignatura = IntegerField('Unidad', validators=[DataRequired()])
     nombre_jefe_departamento = SelectField('Nombre Jefe de Departamento', validators=[DataRequired()],
-                                           choices=User.getJefeDepartamento())
+                                            choices=[])
     nombre_subdirector = SelectField('Nombre de Subdirector', validators=[DataRequired()],
-                                     choices=User.getSubdirector())
+                                        choices=[])
     submit = SubmitField('Solicitar')
 
 

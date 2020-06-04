@@ -9,15 +9,15 @@ from flask_visitas.usuarios.choices import access, department
 
 class RegistrationForm(FlaskForm):
     name = StringField('Nombre Completo',
-                       validators=[DataRequired(),
-                                   Length(min=10, max=100)])
+                        validators=[DataRequired(),
+                                    Length(min=10, max=100)])
     email = StringField('Correo', validators=[DataRequired(), Email()])
     access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=access)
     department = SelectField('Departamento', validators=[DataRequired()], choices=department)
     password = PasswordField('Contraseña', validators=[DataRequired()])
     confirm_password = PasswordField('Confirmar Contraseña',
-                                     validators=[DataRequired(),
-                                                 EqualTo('password')])
+                                        validators=[DataRequired(),
+                                                    EqualTo('password')])
     submit = SubmitField('Registrar')
 
     # @staticmethod
@@ -45,8 +45,8 @@ class LoginForm(FlaskForm):
 
 class UpdateAccountForm(FlaskForm):
     name = StringField('Nombre Completo',
-                       validators=[DataRequired(),
-                                   Length(min=10, max=100)])
+                        validators=[DataRequired(),
+                                    Length(min=10, max=100)])
     email = StringField('Correo', validators=[DataRequired(), Email()])
     access = SelectField('Tipo de Usuario', validators=[DataRequired()], choices=access)
     department = SelectField('Departamento', validators=[DataRequired()], choices=department)

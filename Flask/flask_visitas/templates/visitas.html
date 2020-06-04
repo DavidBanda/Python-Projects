@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
+    <h1 class="mb-3">Visitas ({{ visitas.total }})</h1>
     {% for visita in visitas.items %}
         <article class="media content-section">
             <img src="{{ url_for('static', filename='profile_pics/' + visita.author.image_file) }}" class="rounded-circle article-img">
             <div class="media-body">
                 <div class="article-metadata">
-                    <a class="mr-2" href="{{ url_for('usuarios.account') }}">{{ visita.author.get_username() }}</a>
+                    <a class="mr-2" href="{{ url_for('usuarios.account_admin', id=visita.author.id) }}">{{ visita.author.get_username() }}</a>
                     <small class="text-muted">{{ visita.fecha_visita.strftime('%Y-%m-%d') }}</small>
                 </div>
                 <h2><a class="article-title" href="{{ url_for('solicitudes.actualizar_visita', visita_id=visita.id) }}">{{ visita.nombre_empresa }}</a></h2>
@@ -17,14 +18,62 @@
                 </ul>
                 {% if visita.author == current_user or current_user.access == 4 %}
                     <div>
-                        <a class="btn btn-outline-info btn-sm m-1 mt-3" href="{{ url_for('solicitudes.actualizar_visita', visita_id=visita.id) }}">Actualizar</a>
-                        <button type="button" class="btn btn-danger btn-sm m-1 mt-3" data-toggle="modal"
-                            data-target="#deleteModal">Borrar</button>
+                        <form action="{{ url_for('solicitudes.borrar_visita', visita_id=visita.id) }}" method="POST">
+                            <a class="btn btn-outline-info btn-sm m-1 mt-3" href="{{ url_for('solicitudes.actualizar_visita', visita_id=visita.id) }}">Actualizar</a>
+                            <button type="submit" class="btn btn-danger btn-sm m-1 mt-3">Eliminar</button>
+                        </form>
                     </div>
+                {% else %}
+                    <div>
+                        <form style="display: inline-block;" action="{{ url_for('solicitudes.actualizar_status', visita_id=visita.id, state=1) }}" method="POST">
+                            <button type="submit" class="btn btn-outline-primary btn-sm m-1 mt-3">Aceptar</button>
+                        </form>
+                        <form style="display: inline-block;" action="{{ url_for('solicitudes.actualizar_status', visita_id=visita.id, state=2) }}" method="POST">
+                            <button type="submit" class="btn btn-warning btn-sm m-1 mt-3">Denegar</button>
+                        </form>
+                    </div>
+                {% endif %}
+                {% if current_user.access == 4 or current_user.access == 0 %}
+                    {% if visita.get_status() == 0 %}
+                        <div class="state-visita">
+                            <span class="dot" style="background-color: rgb(199, 196, 36); border-radius: 50%;"></span>
+                            <span class="state text-muted" style="font-size: 0.9rem;">En espera</span>
+                        </div>
+                    {% elif visita.get_status() == 1 %}
+                        <div class="state-visita">
+                            <span class="dot" style="background-color: rgb(25, 207, 34); border-radius: 50%;"></span>
+                            <span class="state text-muted" style="font-size: 0.9rem;">Aceptado</span>
+                        </div>
+                    {% elif visita.get_status() == 2 %}
+                        <div class="state-visita">
+                            <span class="dot" style="background-color: rgb(252, 50, 44); border-radius: 50%;"></span>
+                            <span class="state text-muted" style="font-size: 0.9rem;">Denegado</span>
+                        </div>
+                    {% endif %}
                 {% endif %}
             </div>
         </article>
     {% endfor %}
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">¿Seguro que desea eliminar esta visita?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-danger btn-sm m-1 mt-3">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {% for page_num in visitas.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
         {% if page_num %}
             {% if visitas.page == page_num %}
@@ -36,13 +85,11 @@
             ...
         {% endif %}
     {% endfor %}
-
-
 {% endblock content%}
 
 {% block content2 %}
         {% if last_visita %}
-            <div class="col-md-4">
+            <div class="col-md-4 mt-5">
                 <div class="content-section">
                     <h3>Proxima visita</h3>
                     <p class='text-muted'>Siguiente visita en el calendario</p>

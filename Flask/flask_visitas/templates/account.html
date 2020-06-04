@@ -129,10 +129,12 @@
                 </div>
             </fieldset>
             <div class="form-group">
-                {{ form.submit(class="btn btn-outline-info mr-4") }}
+                {% if not user or current_user.access == 4 %}
+                    {{ form.submit(class="btn btn-outline-info mr-4") }}
+                {% endif %}
                 {% if current_user.access == 4 %}
                     <button type="button" class="btn btn-danger m-1" data-toggle="modal"
-                    data-target="#deleteModal">Borrar</button>
+                    data-target="#deleteModal">Eliminar</button>
                 {% endif %}
             </div>
         </form>
@@ -144,20 +146,20 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="deleteModalLabel">Borrar Visita</h5>
+                <h5 class="modal-title" id="deleteModalLabel">¿Seguro que desea eliminar a este usuario?</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
                 {% if user %}
                     <form action="{{ url_for('usuarios.borrar_usuario', usuario_id=user.id) }}" method="POST">
-                        <input class="btn btn-danger" type="submit" value="Delete">
+                        <input class="btn btn-danger" type="submit" value="Eliminar">
                     </form>
                 {% else %}
                     <form action="{{ url_for('usuarios.borrar_usuario', usuario_id=current_user.id) }}" method="POST">
-                        <input class="btn btn-danger" type="submit" value="Delete">
+                        <input class="btn btn-danger" type="submit" value="Eliminar">
                     </form>
                 {% endif %}
             </div>

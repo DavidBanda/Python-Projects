@@ -1,8 +1,7 @@
 from flask_visitas import db
 from datetime import datetime
 from flask_visitas.solicitudes.dict_choices import status, periodo, \
-    carrera, turno, department
-
+    carrera, turno
 
 class Visitas(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -42,5 +41,12 @@ class Visitas(db.Model):
         return periodo[self.periodo]
 
     def get_status(self):
-        return status[self.status]
+        if self.status_jefe_departamento == 2 or self.status_subdirector == 2 \
+                or self.status_gestion_tecnologica == 2:
+            return 2
+        elif self.status_jefe_departamento == 1 and self.status_subdirector == 1 \
+                and self.status_gestion_tecnologica == 1:
+            return 1
+        else:
+            return 0
 

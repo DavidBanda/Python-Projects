@@ -26,7 +26,7 @@ class User(db.Model, UserMixin):
         jefes = User.query.filter_by(access=1).all()
         storeJefesChoices = []
         for i, jefe in enumerate(jefes):
-            storeJefesChoices.append((f'{i}', f'{jefe.name}'))
+            storeJefesChoices.append((f'{jefe.name}', f'{jefe.name}'))
         return storeJefesChoices if len(storeJefesChoices) > 0 else [(f'{0}', 'Inexistente')]
 
     @staticmethod

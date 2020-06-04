@@ -62,7 +62,7 @@ def account():
         current_user.access = int(form.access.data)
         db.session.commit()
         flash('Tu cuenta ha sido actualizada!', 'success')
-        return redirect(url_for('usuarios.account'))
+        # return redirect(url_for('usuarios.account'))
     elif request.method == 'GET':
         form.name.data = current_user.name
         form.email.data = current_user.email
@@ -70,7 +70,7 @@ def account():
         form.access.data = f'{current_user.access}'
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('account.html', title='Cuenta',
-                           image_file=image_file, form=form)
+                            image_file=image_file, form=form)
 
 
 @usuarios.route('/usuario/<int:id>/')
@@ -81,7 +81,8 @@ def visitas_usuario(id):
     visitas = Visitas.query.filter_by(author=user)\
         .order_by(Visitas.fecha_elaboracion.desc())\
         .paginate(page=page, per_page=5)
-    return render_template('visitas_usuario.html', visitas=visitas, title="Visitas Usuario", user=user)
+    last_visita = Visitas.query.filter_by(author=user).order_by(Visitas.fecha_visita.asc()).first()
+    return render_template('visitas_usuario.html', visitas=visitas, title="Visitas Usuario", user=user, last_visita=last_visita)
 
 
 @usuarios.route('/usuarios')
@@ -98,10 +99,10 @@ def all_users():
 @usuarios.route('/cuenta/<int:id>/', methods=['GET', 'POST'])
 @login_required
 def account_admin(id):
+    user = User.query.filter_by(id=id).first_or_404()
+    form = UpdateAccountForm()
+    form.data_user_prev = user
     if current_user.access == 4:
-        user = User.query.filter_by(id=id).first_or_404()
-        form = UpdateAccountForm()
-        form.data_user_prev = user
         if form.validate_on_submit():
             if form.picture.data:
                 picture_file = save_picture(form.picture.data)
@@ -121,7 +122,16 @@ def account_admin(id):
             form.department.data = f'{user.department}'
         image_file = url_for('static', filename='profile_pics/' + user.image_file)
         return render_template('account.html', title='Cuenta',
-                               image_file=image_file, form=form, user=user)
+                                image_file=image_file, form=form, user=user)
+    elif current_user.access in [1, 2, 3]:
+        form.name.data = user.name
+        form.email.data = user.email
+        form.access.data = f'{user.access}'
+        form.department.data = f'{user.department}'
+        image_file = url_for('static', filename='profile_pics/' + user.image_file)
+        return render_template('account.html', title='Cuenta',
+                                image_file=image_file, form=form, user=user)
+    
 
     abort(403)
 
