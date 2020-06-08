@@ -1,8 +1,10 @@
 <h1 style="text-align: center;">Gestión de visitas</h1>
 
 <p style="font-size: 1rem; text-align: center;">Para restablecer tu contraseña, da click en el siguiente enlace: <br><br><br> <a style="text-align: center;" href="{{ url_for('usuarios.reset_token', token=token, _external=True) }}">Restablecer mi contraseña</a></p>
-<br><br>
-<div style="text-align: center; position: fixed; z-index: -1; bottom: 58%; left: 34%;">
+<br>
+<p style="font-size: 1rem; text-align: center;">Si no realizaste esta solicitud, por favor ignora este email.</p>
+<br>
+<div style="text-align: center; z-index: -1; left: 34%;">
     <div style="opacity: .8; bottom: 0rem;">
         <img style="max-width: 95%; height: auto;" src="https://raw.githubusercontent.com/DavidBanda/Python/master/Flask/flask_visitas/static/images/mail-itch2.jpeg">
         <!-- <img style="max-width: 95%; height: auto;" src="{{ image_file }}">

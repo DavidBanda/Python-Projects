@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f891cacb-1736-42e3-8582-f9b823495224" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/solicitudes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/solicitudes/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_visitas/templates/mail_body.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/templates/mail_body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_visitas/usuarios/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_visitas/usuarios/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpAndWebservers" beforeDir="false" afterPath="$PROJECT_DIR$/../httpAndWebservers" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +112,10 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="328" y="137" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591396021055">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="328" y="137" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1591396021055" />
     <state x="342" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1589061000717">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -138,10 +144,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="33" y="0" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1590172258652" />
-    <state x="263" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1591307445136">
+    <state x="263" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1591393300023">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="263" y="188" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1591307445136" />
+    <state x="263" y="188" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1591393300023" />
     <state x="123" y="95" width="1013" height="654" key="find.popup" timestamp="1589079046981">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

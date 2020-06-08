@@ -200,3 +200,5 @@ def reset_token(token):
         return redirect(url_for('usuarios.login'))
     return render_template('restablecer_token.html',
                            title="Restablecer Contraseña", form=form)
+
+
