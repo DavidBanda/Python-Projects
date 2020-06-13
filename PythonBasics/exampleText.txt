@@ -1,4 +1,0 @@
-Simple texto a guardar
-Otra linea
-Añadir otra linea
-Añadir otra linea
